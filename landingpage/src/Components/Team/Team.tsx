@@ -3,6 +3,7 @@ import "./Team.scss";
 
 import { Card, CardImg, CardSubtitle, CardTitle } from "reactstrap";
 
+// importing social icons
 import facebook from "src/Components/Team/img/facebook.svg";
 import instagram from "src/Components/Team/img/instagram.svg";
 import linkedin from "src/Components/Team/img/linkedin.svg";
@@ -18,10 +19,7 @@ export default class Team extends React.Component<ITeamProps> {
     return (
       <div>
         <Card>
-          <CardImg
-            width="100%"
-            src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180"
-          />
+          <CardImg width="100%" src={require(`${this.props.picture}`)} />
           <CardTitle>{this.props.name}</CardTitle>
           <CardSubtitle>{this.props.title}</CardSubtitle>
           <img src={facebook} />

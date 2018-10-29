@@ -14,7 +14,7 @@ export interface ISectionHeaderProps {
 export interface ITeamProps {
   name: string;
   title: string;
-  picture?: string;
+  picture: string;
   facebook?: string;
   linkedin?: string;
   instagram?: string;

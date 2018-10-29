@@ -31,7 +31,7 @@ class App extends React.Component {
           <Button>Subscribe</Button>
           <ContentBox/>
           <SectionHeader header={"heading 1"} subHeader={"subHeading 1"}/>
-          <Team name={"Minsoo Kim"} title={"Founder and CEO"} />
+          <Team name={"Minsoo Kim"} title={"Founder and CEO"} picture={"./img/minsoo.jpg"}/>
         </header>
       <HeroSection/>
       </div>
