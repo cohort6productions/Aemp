@@ -1,3 +1,7 @@
 export interface IButtonProps {
-    text: string;
+  text: string;
+}
+
+export interface IInputProps {
+  message: string;
 }

@@ -1,10 +1,9 @@
 import * as React from "react";
-import "./contentBox.css";
-
+import "./ContentBox.scss";
 
 import { Card, CardImg } from "reactstrap";
 
-export class ContentBox extends React.Component{
+export default class ContentBox extends React.Component{
 
   public render() {
     return (
