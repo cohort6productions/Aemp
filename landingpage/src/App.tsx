@@ -4,9 +4,9 @@ import './App.scss';
 
 import { Button } from "reactstrap";
 
-import { ContentBox } from "./components/ContentBox/ContentBox";
-import { InputBox } from "./components/InputBox/InputBox";
-import { SectionHeader } from "./components/sectionHeader/sectionHeader";
+import ContentBox  from "./Components/ContentBox/ContentBox";
+import  InputBox from "./Components/InputBox/InputBox";
+import  SectionHeader  from "./Components/SectionHeader/SectionHeader";
 
 // Importing styling and static assets
 // Importing reduc and friends

@@ -1,11 +1,13 @@
 import * as React from "react";
-import "./sectionHeader.scss";
+import "./SectionHeader.scss";
 
-import {Card} from 'reactstrap';
+import { Card } from "reactstrap";
 
-import { ISectionHeaderProps } from "../../interfaces/interface";
+import { ISectionHeaderProps } from "src/Interfaces/Interfaces";
 
-export class SectionHeader extends React.Component<ISectionHeaderProps> {
+export default class SectionHeader extends React.Component<
+  ISectionHeaderProps
+> {
   constructor(props: ISectionHeaderProps) {
     super(props);
   }
@@ -13,7 +15,7 @@ export class SectionHeader extends React.Component<ISectionHeaderProps> {
     return (
       <div>
         <h2 className="sectionHeader"> {this.props.header} </h2>
-        <Card style={{backgroundColor: "orange", width: "35%"}}/>
+        <Card style={{ backgroundColor: "orange", width: "35%" }} />
         <h3 className="sectionSubHeader"> {this.props.subHeader} </h3>
       </div>
     );
