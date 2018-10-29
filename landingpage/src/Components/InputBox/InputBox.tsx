@@ -1,11 +1,11 @@
 import * as React from "react";
-import "./inputBox.scss";
+import "./InputBox.scss";
 
 import { Form, FormGroup, Input } from "reactstrap";
 
-import { IInputProps } from "../../interfaces/interface";
+import { IInputProps } from "src/Interfaces/Interfaces";
 
-export class InputBox extends React.Component<IInputProps> {
+export default class InputBox extends React.Component<IInputProps> {
   constructor(props: IInputProps) {
     super(props);
   }
