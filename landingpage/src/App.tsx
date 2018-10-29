@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 import * as React from "react";
 import "./App.css";
+=======
+import * as React from 'react';
+import './App.scss';
+>>>>>>> e3f10209c68ba1ea473112ee227921ce846ec7a3
 
 import { Button } from "reactstrap";
 
