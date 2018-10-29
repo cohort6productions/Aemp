@@ -1,5 +1,5 @@
 import * as React from "react";
-import "./contentBox.css";
+import "./contentBox.scss";
 
 
 import { Card, CardImg } from "reactstrap";

@@ -5,6 +5,8 @@ import { Button } from "reactstrap";
 
 import { ContentBox } from "./components/contentBox/contentBox";
 import { InputBox } from "./components/inputBox/inputBox";
+import { SectionHeader } from "./components/sectionHeader/sectionHeader";
+
 
 // import logo from './logo.svg';
 
@@ -20,6 +22,7 @@ class App extends React.Component {
           <InputBox message="Subscribe for updates" />
           <Button>Subscribe</Button>
           <ContentBox/>
+          <SectionHeader header={"heading 1"} subHeader={"subHeading 1"}/>
         </header>
       </div>
     );

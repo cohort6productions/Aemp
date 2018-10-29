@@ -1,5 +1,5 @@
 import * as React from "react";
-import "./inputBox.css";
+import "./inputBox.scss";
 
 import { Form, FormGroup, Input } from "reactstrap";
 
