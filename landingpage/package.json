@@ -8,12 +8,7 @@
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-scripts-ts": "3.1.0",
-<<<<<<< HEAD
     "reactstrap": "^6.5.0"
-=======
-    "reactstrap": "^6.5.0",
-    "semantic-ui-react": "^0.83.0"
->>>>>>> b809026fa62f37f685ebd492e66a25e27d56aa2c
   },
   "scripts": {
     "start": "react-scripts-ts start",
