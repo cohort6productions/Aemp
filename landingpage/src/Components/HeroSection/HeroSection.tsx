@@ -8,7 +8,6 @@ import "./HeroSection.scss";
 // Importing react routering
 // Importing UI elements
 import { Button } from "reactstrap";
-import ContentBox from "src/Components/ContentBox/ContentBox";
 import InputBox from "src/Components/InputBox/InputBox";
 import Navbar from "src/Components/NavBar/NavBar";
 // Importing interfaces
@@ -24,7 +23,6 @@ export default class HeroSection extends React.Component {
         <h3>Invest into what you believe in. Don't be an outsider.</h3>
         <InputBox message="Subscribe for updates" />
         <Button>Subscribe</Button>
-        <ContentBox />
       </header>
     );
   }
