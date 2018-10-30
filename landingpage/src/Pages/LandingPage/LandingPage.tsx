@@ -8,6 +8,8 @@ import * as React from "react";
 import { Button } from "reactstrap";
 import ContentBox from "src/Components/ContentBox/ContentBox";
 import HeroSection from "src/Components/HeroSection/HeroSection";
+import HowToCard from "src/Components/HowToCard/HowToCard";
+import HowToCarousel from "src/Components/HowToCarousel/HowToCarousel";
 import InputBox from "src/Components/InputBox/InputBox";
 import SectionHeader from "src/Components/SectionHeader/SectionHeader";
 import Team from "src/Components/Team/Team";
@@ -26,6 +28,8 @@ export default class LandingPage extends React.Component {
           <Button>Subscribe</Button>
           <ContentBox />
           <SectionHeader header={"heading 1"} subHeader={"subHeading 1"} />
+          <HowToCard />
+          <HowToCarousel />
           <Team
             name={"Minsoo Kim"}
             title={"Founder and CEO"}
