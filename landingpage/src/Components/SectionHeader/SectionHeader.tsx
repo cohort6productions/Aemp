@@ -1,8 +1,16 @@
+// Importing modules
 import * as React from "react";
+
+// Importing styling and static assets
 import "./SectionHeader.scss";
 
+// Importing reduc and friends
+// Importing react routering
+
+// Importing UI elements
 import { Card } from "reactstrap";
 
+// Importing interfaces
 import { ISectionHeaderProps } from "src/Interfaces/Interfaces";
 
 export default class SectionHeader extends React.Component<

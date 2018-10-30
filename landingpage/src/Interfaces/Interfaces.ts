@@ -20,3 +20,7 @@ export interface ITeamProps {
   instagram?: string;
   twitter?: string;
 }
+
+export interface INavBarState {
+  isOpen: boolean;
+}

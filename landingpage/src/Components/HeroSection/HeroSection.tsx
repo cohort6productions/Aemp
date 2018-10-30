@@ -10,12 +10,14 @@ import "./HeroSection.scss";
 import { Button } from "reactstrap";
 import ContentBox from "src/Components/ContentBox/ContentBox";
 import InputBox from "src/Components/InputBox/InputBox";
+import Navbar from "src/Components/NavBar/NavBar";
 // Importing interfaces
 
 export default class HeroSection extends React.Component {
   public render() {
     return (
-      <header className="Hero">
+      <header className="fullPage" id="hero">
+        <Navbar />
         <h1 className="Punchline">
           Support Your Beloved <br /> Creative Media Projects
         </h1>

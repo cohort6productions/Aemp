@@ -13,11 +13,10 @@ import SectionHeader from "src/Components/SectionHeader/SectionHeader";
 import Team from "src/Components/Team/Team";
 // Importing interfaces
 
-
 export default class LandingPage extends React.Component {
   public render() {
     return (
-      <div className="App">
+      <div className="landingPage">
         <header className="Hero">
           <h1 className="Punchline">
             Support Your Beloved <br /> Creative Media Projects
@@ -34,6 +33,14 @@ export default class LandingPage extends React.Component {
           />
         </header>
         <HeroSection />
+        {/* <div className="fullPage" id="projects">
+        </div>
+        <div className="fullPage" id="howitworks">
+        </div>
+        <div className="fullPage" id="partners"></div>
+        <div className="fullWidth" id="team"></div>
+        <div className="fullWidth" id="subscription"></div>
+        <footer className="fullWidth"></footer> */}
       </div>
     );
   }
