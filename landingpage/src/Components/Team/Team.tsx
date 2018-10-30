@@ -1,7 +1,7 @@
 import * as React from "react";
 import "./Team.scss";
 
-import { Card, CardImg, CardSubtitle, CardTitle } from "reactstrap";
+import { Card, CardImg, CardSubtitle, CardTitle, Col, Row } from "reactstrap";
 
 // importing social icons
 import facebook from "src/Components/Team/img/facebook.svg";
@@ -17,15 +17,29 @@ export default class Team extends React.Component<ITeamProps> {
   }
   public render() {
     return (
-      <div>
+      <div className="teamCard">
         <Card>
-          <CardImg width="100%" src={require(`${this.props.picture}`)} />
-          <CardTitle>{this.props.name}</CardTitle>
-          <CardSubtitle>{this.props.title}</CardSubtitle>
-          <img src={facebook} />
-          <img src={instagram} />
-          <img src={linkedin} />
-          <img src={twitter} />
+          <CardImg
+            className="cardImg"
+            width="100%"
+            src={require(`${this.props.picture}`)}
+          />
+          <CardTitle className="cardTitle">{this.props.name}</CardTitle>
+          <CardSubtitle className="cardSubtitle">{this.props.title}</CardSubtitle>
+          <Row className="socialIcon">
+            <Col>
+              <img src={facebook} />
+            </Col>
+            <Col>
+              <img src={instagram} />
+            </Col>
+            <Col>
+              <img src={linkedin} />
+            </Col>
+            <Col>
+              <img src={twitter} />
+            </Col>
+          </Row>
         </Card>
       </div>
     );

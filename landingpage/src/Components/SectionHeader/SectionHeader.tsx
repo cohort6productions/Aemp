@@ -15,7 +15,10 @@ export default class SectionHeader extends React.Component<
     return (
       <div>
         <h2 className="sectionHeader"> {this.props.header} </h2>
-        <Card style={{ backgroundColor: "orange", width: "35%" }} />
+        <Card
+          className="line"
+          style={{ backgroundColor: "orange", width: "35%" }}
+        />
         <h3 className="sectionSubHeader"> {this.props.subHeader} </h3>
       </div>
     );
