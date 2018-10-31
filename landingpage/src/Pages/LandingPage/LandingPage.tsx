@@ -5,21 +5,14 @@ import * as React from "react";
 // Importing react routering
 
 // Importing UI elements
-import { Button } from "reactstrap";
-import ContentBox from "src/Components/ContentBox/ContentBox";
 import HeroSection from "src/Components/HeroSection/HeroSection";
-import HowToCard from "src/Components/HowToCard/HowToCard";
-import HowToCarousel from "src/Components/HowToCarousel/HowToCarousel";
-import InputBox from "src/Components/InputBox/InputBox";
-import SectionHeader from "src/Components/SectionHeader/SectionHeader";
-import Team from "src/Components/Team/Team";
 // Importing interfaces
 
 export default class LandingPage extends React.Component {
   public render() {
     return (
       <div className="landingPage">
-        <header className="Hero">
+        {/* <header className="Hero">
           <h1 className="Punchline">
             Support Your Beloved <br /> Creative Media Projects
           </h1>
@@ -35,7 +28,7 @@ export default class LandingPage extends React.Component {
             title={"Founder and CEO"}
             picture={"./img/minsoo.jpg"}
           />
-        </header>
+        </header> */}
         <HeroSection />
         {/* <div className="fullPage" id="projects">
         </div>

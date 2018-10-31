@@ -15,8 +15,8 @@ export default class HowToCard extends React.Component<IHowToCardProps> {
   public render() {
     return (
       <div className="teamCard">
-        <Card>
-          <Row>
+        <Card >
+          <Row >
             <Col>
               <h1>Creators</h1>
               <h2>Producers, Writers and Talents</h2>
