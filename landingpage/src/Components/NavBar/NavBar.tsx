@@ -16,7 +16,7 @@ import {
 import { INavBarState } from "../../Interfaces/Interfaces";
 import "./NavBar.scss";
 
-import Logo from "./img/logo-hwz-org.png";
+import Logo from "./Images/logo-hwz-org.png";
 
 export default class NavBar extends React.Component<{}, INavBarState> {
   constructor(props: any) {

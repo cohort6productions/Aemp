@@ -21,6 +21,19 @@ export interface ITeamProps {
   twitter?: string;
 }
 
+// NavBar
 export interface INavBarState {
   isOpen: boolean;
+}
+
+// CreatorProjectBox
+export interface ICreatorProjectBoxProps{
+  name: string;
+  description: string;
+  image: any;
+}
+
+// CreatorProjectGridDisplay
+export interface ICreatorProejctDisplayProps{
+  list: ICreatorProjectBoxProps[];
 }

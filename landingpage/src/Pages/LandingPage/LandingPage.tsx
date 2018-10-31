@@ -5,6 +5,7 @@ import * as React from "react";
 // Importing react routering
 
 // Importing UI elements
+import CreatorProjectGridDisplay from "src/Components/CreatorProjectGridDisplay/CreatorProjectGridDisplay";
 import HeroSection from "src/Components/HeroSection/HeroSection";
 // Importing interfaces
 
@@ -12,30 +13,8 @@ export default class LandingPage extends React.Component {
   public render() {
     return (
       <div className="landingPage">
-        {/* <header className="Hero">
-          <h1 className="Punchline">
-            Support Your Beloved <br /> Creative Media Projects
-          </h1>
-          <h3>Invest into what you believe in. Don't be an outsider.</h3>
-          <InputBox message="Subscribe for updates" />
-          <Button>Subscribe</Button>
-          <ContentBox />
-          <SectionHeader header={"heading 1"} subHeader={"subHeading 1"} />
-          <Team
-            name={"Minsoo Kim"}
-            title={"Founder and CEO"}
-            picture={"./img/minsoo.jpg"}
-          />
-        </header> */}
         <HeroSection />
-        {/* <div className="fullPage" id="projects">
-        </div>
-        <div className="fullPage" id="howitworks">
-        </div>
-        <div className="fullPage" id="partners"></div>
-        <div className="fullWidth" id="team"></div>
-        <div className="fullWidth" id="subscription"></div>
-        <footer className="fullWidth"></footer> */}
+        <CreatorProjectGridDisplay />
       </div>
     );
   }
