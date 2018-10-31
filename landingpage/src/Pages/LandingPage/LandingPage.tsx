@@ -6,6 +6,7 @@ import * as React from "react";
 
 // Importing UI elements
 import HeroSection from "src/Components/HeroSection/HeroSection";
+import HowToCarousel from "src/Components/HowToCarousel/HowToCarousel";
 // Importing interfaces
 
 export default class LandingPage extends React.Component {
@@ -30,6 +31,7 @@ export default class LandingPage extends React.Component {
           />
         </header> */}
         <HeroSection />
+        <HowToCarousel />
         {/* <div className="fullPage" id="projects">
         </div>
         <div className="fullPage" id="howitworks">
