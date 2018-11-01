@@ -1,5 +1,17 @@
-.sectionHeader,
-.sectionSubHeader,
-.line {
-  display: block;
+.sectionHeaderContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+
+    .sectionHeader {}
+
+    .sectionHeaderDivider {
+        width: 10vw;
+        background-color: orange;
+    }
+
+    .sectionHeader {}
 }

@@ -10,7 +10,7 @@ import Footer from "src/Components/Footer/Footer";
 import FooterSection from "src/Components/FooterSection/FooterSection";
 import HeroSection from "src/Components/HeroSection/HeroSection";
 import PartnersCard from "src/Components/PartnersCard/ParntersCard";
-
+import Team from "src/Components/Team/Team";
 // Importing interfaces
 
 export default class LandingPage extends React.Component {
@@ -20,10 +20,9 @@ export default class LandingPage extends React.Component {
         <HeroSection />
         <CreatorProjectGridDisplay />
         <PartnersCard />
-        {/* <Team /> */}
-        <FooterSection/>
-        <Footer/>
-
+        <Team />
+        <FooterSection />
+        <Footer />
       </div>
     );
   }
