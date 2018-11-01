@@ -1,3 +1,12 @@
+#footer {
+  margin: 50px;
+}
+
+.title {
+  color: #ffa800;
+  font-weight: bold;
+}
+
 .inputBox {
   width: 90%;
 }
@@ -6,4 +15,42 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+}
+
+.footerColumn {
+  margin: 10px 0px;
+}
+
+.socialIcon {
+  margin-top: 15px;
+  width: 15rem;
+}
+#buttonArrow {
+  color: white;
+}
+
+#disclaimer {
+  margin-top: 50px;
+  font-size: 12px;
+}
+
+#leftDisclaimer {
+  text-align: left;
+}
+
+#rightDisclaimer {
+  text-align: right;
+}
+
+#padding{
+  margin-top: 100px;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid rgb(224, 224, 224);
+  margin: 1em 0;
+  padding: 0;
 }
