@@ -62,7 +62,7 @@ export default class Team extends React.Component<{}, {}> {
   }
   public render() {
     return (
-      <div className="fullWidth70p width-70">
+      <div className="teamSection">
         <SectionHeader {...headerContent} />
         <div className="teamContainer">
           {tempTeamInfo.map((member, i) => {
