@@ -1,5 +1,5 @@
 export interface IInputProps {
-  message: string;
+  message?: string;
 }
 
 export interface IContentBoxProps {
