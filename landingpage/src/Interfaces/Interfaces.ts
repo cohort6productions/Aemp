@@ -20,6 +20,12 @@ export interface ITeamProps {
     instagramLink?: string;
     twitterLink?: string;
 }
+export interface IHowToCardProps{
+  heading?: string;
+  subHeading?: string;
+  content?: string;
+  picture?: string;
+}
 
 // NavBar
 export interface INavBarState {
@@ -34,6 +40,6 @@ export interface ICreatorProjectBoxProps {
 }
 
 // CreatorProjectGridDisplay
-export interface ICreatorProejctDisplayProps {
+export interface ICreatorProjectDisplayProps {
     list: ICreatorProjectBoxProps[];
 }
