@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Droid Serif Regualr';
+    src: url('./Style/Fonts/DroidSerif-Regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'Droid Serif Bold';
+    src: url('./Style/Fonts/DroidSerif-Bold.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'Droid Serif Italic';
+    src: url('./Style/Fonts/DroidSerif-Italic.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'Droid Serif Bold Italic';
+    src: url('./Style/Fonts/DroidSerif-BoldItalic.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
