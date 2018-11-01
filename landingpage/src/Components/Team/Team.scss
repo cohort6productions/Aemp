@@ -1,0 +1,21 @@
+.fullWidth70p {
+    width: 100%;
+    padding: 0 17.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .teamContainer {
+        display: grid;
+        width: 100%;
+        padding: 10%;
+        grid-gap: 10%;
+
+
+        grid-template-columns: repeat(2, 1fr);
+
+        justify-items: center;
+
+
+    }
+}

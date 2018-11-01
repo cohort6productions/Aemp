@@ -8,18 +8,22 @@ import * as React from "react";
 import CreatorProjectGridDisplay from "src/Components/CreatorProjectGridDisplay/CreatorProjectGridDisplay";
 import HeroSection from "src/Components/HeroSection/HeroSection";
 import PartnersCard from "src/Components/PartnersCard/ParntersCard";
+import Team from "src/Components/Team/Team";
 // Importing interfaces
 
-export default class LandingPage extends React.Component {
-  public render() {
-    return (
-      <div className="landingPage">
-        <HeroSection />
-        <CreatorProjectGridDisplay />
-        <PartnersCard />
-        {/* <Team /> */}
 
-      </div>
-    );
-  }
+
+
+export default class LandingPage extends React.Component {
+    public render() {
+        return (
+            <div className="landingPage">
+                <HeroSection />
+                <CreatorProjectGridDisplay />
+                <PartnersCard />
+                <Team />
+
+            </div>
+        );
+    }
 }

@@ -1,32 +1,79 @@
 import * as React from "react";
+import SectionHeader from '../SectionHeader/SectionHeader';
 import "./Team.scss";
 
-import { Card, CardImg, CardSubtitle, CardTitle } from "reactstrap";
+import { ITeamProps } from 'src/Interfaces/Interfaces';
+// import TeamMember from './TeamMember/TeamMember';
 
-// importing social icons
-import facebook from "src/Components/Team/img/facebook.svg";
-import instagram from "src/Components/Team/img/instagram.svg";
-import linkedin from "src/Components/Team/img/linkedin.svg";
-import twitter from "src/Components/Team/img/twitter.svg";
+import jason from "./Images/jason.jpg";
+import minsoo from "./Images/minsoo.jpg";
+import reid from "./Images/reid.jpg";
+import steve from "./Images/steve.jpg";
+import TeamMember from './TeamMember/TeamMember';
 
-import { ITeamProps } from "src/Interfaces/Interfaces";
+// Declaring variables
+const headerContent = {
+  header: "Our Team",
+  subHeader: `Meet our amazing team members who made all this possible`
+}
 
-export default class Team extends React.Component<ITeamProps> {
-  constructor(props: ITeamProps) {
+const tempTeamInfo: ITeamProps[] = [
+  {
+    facebookLink: "2",
+    instagramLink: "1",
+    linkedinLink: "1",
+    name: "Minsoo Kim",
+    pictureLink: minsoo,
+    title: "Founder and CEO",
+    twitterLink: "1",
+  },
+  {
+    facebookLink: "123",
+    instagramLink: "123",
+    linkedinLink: "123",
+    name: "Reid Frasier",
+    pictureLink: reid,
+    title: "CTO",
+    twitterLink: "123",
+  },
+  {
+    facebookLink: "123",
+    instagramLink: "123",
+    linkedinLink: "123",
+    name: "Jason Coyle",
+    pictureLink: jason,
+    title: "COO",
+    twitterLink: "123",
+  },
+  {
+    facebookLink: "123",
+    instagramLink: "123",
+    linkedinLink: "123",
+    name: "Steve Nelson",
+    pictureLink: steve,
+    title: "General Counsel",
+    twitterLink: "123",
+  },
+]
+
+export default class Team extends React.Component<{}, {}> {
+  constructor(props: {}) {
     super(props);
   }
   public render() {
     return (
-      <div>
-        <Card>
-          <CardImg width="100%" src={require(`${this.props.picture}`)} />
-          <CardTitle>{this.props.name}</CardTitle>
-          <CardSubtitle>{this.props.title}</CardSubtitle>
-          <img src={facebook} />
-          <img src={instagram} />
-          <img src={linkedin} />
-          <img src={twitter} />
-        </Card>
+      <div className="fullWidth70p width-70">
+        <SectionHeader {...headerContent} />
+        <div className="teamContainer">
+          {tempTeamInfo.map((member, i) => {
+            return (
+              <TeamMember
+                {...member} key={i}
+              />
+            )
+          })}
+
+        </div>
       </div>
     );
   }
