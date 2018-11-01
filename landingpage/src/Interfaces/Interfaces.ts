@@ -26,7 +26,20 @@ export interface IHowToCardProps{
   content?: string;
   picture?: string;
 }
+
+// NavBar
 export interface INavBarState {
   isOpen: boolean;
 }
 
+// CreatorProjectBox
+export interface ICreatorProjectBoxProps{
+  name: string;
+  description: string;
+  image: any;
+}
+
+// CreatorProjectGridDisplay
+export interface ICreatorProjectDisplayProps{
+  list: ICreatorProjectBoxProps[];
+}
