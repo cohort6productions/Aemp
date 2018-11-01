@@ -1,9 +1,22 @@
 #footerTop {
   color: white;
   padding: 50px;
-  background-color:#1976d2;
+  background-image:
+    linear-gradient(60deg, rgba(255,168,0, 1) 0%, 
+    rgba(255,168,0, 1) 40%, 
+    rgba(25,118,210, 1) 40%, 
+    rgba(25,118,210, 1) 100%),
+    linear-gradient(rgba(25, 118, 210, 0.8), rgba(25, 118, 210, 0.8))
 }
 
-.footerSubscribe {
+#button{
   color: white;
+  box-shadow: 5px 5px 5px darkslategrey;
+}
+
+#footerJoin {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
 }

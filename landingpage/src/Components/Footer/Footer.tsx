@@ -16,44 +16,61 @@ export default class Footer extends React.Component {
     return (
       <div id="footer">
         <Row>
-          <Col>
+          <Col xs="12" sm="12" md="6" lg="3" className="footerColumn">
             <a href="#">
               <img src={Logo} />
             </a>
             <br />
             <a href="mailto:info@ambrasia.com">info@ambrasia.com</a>
           </Col>
-          <Col>
-            <a href="#">Search</a>
+          <Col xs="12" sm="12" md="6" lg="3" className="footerColumn">
+            <a href="#" className="title">
+              Search
+            </a>
             <br />
             <a href="#">Creators</a>
             <br />
             <a href="#">Projects</a>
           </Col>
-          <Col>
-            <a href="#">Follow us</a>
+          <Col xs="12" sm="12" md="6" lg="3" className="footerColumn">
+            <a href="#" className="title">
+              Follow us
+            </a>
             <br />
             <Row className="socialIcon">
               <Col>
                 <img src={Facebook} />
               </Col>
               <Col>
-                <img src={Instagram} />
+                <img src={Twitter} />
               </Col>
               <Col>
                 <img src={Linkedin} />
               </Col>
               <Col>
-                <img src={Twitter} />
+                <img src={Instagram} />
               </Col>
             </Row>
           </Col>
-          <Col>
-            Subscribe
+          <Col xs="12" sm="12" md="6" lg="3" className="footerColumn">
+            <p className="title">Subscribe</p>
             <div className="footerSubscribe">
               <Input className="inputBox" type="email" />
-              <Button>></Button>
+              <Button color="secondary" id="buttonArrow">
+                >
+              </Button>
             </div>
+          </Col>
+        </Row>
+        <div id="padding">
+          <hr />
+        </div>
+        <Row id="disclaimer">
+          <Col sm="12" md="6" id="leftDisclaimer">
+            <p>Made with love by Cohort 6 Productions</p>
+          </Col>
+          <Col sm="12" md="6" id="rightDisclaimer">
+            <p>@2018 Ambrasia Multimedia Limited All rights reserved</p>
           </Col>
         </Row>
       </div>
