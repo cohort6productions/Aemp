@@ -23,14 +23,18 @@ export default class ICreatorProjectBox extends React.Component<
   constructor(props: ICreatorProjectBoxProps) {
     super(props);
   }
+
   public render() {
     return (
-      <div className="smallBox" style={{backgroundImage:`url(${this.props.image})`}}>
+      <div
+        className={this.props.highlight ? "lgGridBox" : "smGridBox"}
+        // style={{ backgroundImage: `url(${this.props.image})` }}
+      >
+        <img className="boxImage" src={this.props.image} alt="" />
         <div className="nameTag">
-          <span className="nameTxt">{this.props.name}</span>
+          <span className="nameTxt text-white">{this.props.name}</span>
         </div>
       </div>
     );
   }
 }
-

@@ -1,27 +1,42 @@
 .projectSection {
+    position: relative;
+    top: -8vh;
     width: 100vw;
+    padding: 0 20%;
+
 
     // height: 100vh;
-    .container {
+
+    .tagContainer {
+        width: 100%;
+        height: 8vh;
+        background-color: rgba(0, 78, 114, 0.8);
+        display: flex;
+
+        .singleTag {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+
+            .tagIcon {
+                width: 5%;
+                // height: 50%;
+            }
+
+        }
+
+    }
+
+    .creatorProjectContainer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        background-color: grey;
+        padding: 5% 10%;
         width: 100%;
 
-        .tagContainer {
-            width: 100%;
-            height: 5vh;
-            background-color: rgba(0, 78, 114, 0.8);
-            display: flex;
 
-            .singleTag {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 50%;
-                .tagIcon{
-                    width: 5%;
-                    // height: 50%;
-                }
-
-            }
-        }
     }
+
 }
