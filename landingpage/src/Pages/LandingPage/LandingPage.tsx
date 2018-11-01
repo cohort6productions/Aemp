@@ -7,6 +7,7 @@ import * as React from "react";
 // Importing UI elements
 import CreatorProjectGridDisplay from "src/Components/CreatorProjectGridDisplay/CreatorProjectGridDisplay";
 import HeroSection from "src/Components/HeroSection/HeroSection";
+import PartnersCard from "src/Components/PartnersCard/ParntersCard";
 // Importing interfaces
 
 export default class LandingPage extends React.Component {
@@ -15,6 +16,9 @@ export default class LandingPage extends React.Component {
       <div className="landingPage">
         <HeroSection />
         <CreatorProjectGridDisplay />
+        <PartnersCard />
+        {/* <Team /> */}
+
       </div>
     );
   }
