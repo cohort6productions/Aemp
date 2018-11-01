@@ -17,7 +17,7 @@ export default class HeroSection extends React.Component {
     return (
       <header className="fullPage" id="hero">
         <Navbar />
-        <h1 className="Punchline">
+        <h1 className="Punchline text-white">
           Support Your Beloved <br /> Creative Media Projects
         </h1>
         <p>Invest into what you believe in. Don't be an outsider.</p>
@@ -25,7 +25,9 @@ export default class HeroSection extends React.Component {
           <div className="emailInput">
             <InputBox message="Subscribe for updates" />
           </div>
-          <Button color="warning" id="button">Subscribe</Button>
+          <Button color="warning" id="button">
+            Subscribe
+          </Button>
         </div>
       </header>
     );

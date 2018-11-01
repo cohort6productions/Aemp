@@ -1,4 +1,44 @@
-.smallBox{
+@import "./src/Style/Templates";
+
+.nameTxt {
+    z-index: 100;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: orange;
+    color: white;
+}
+
+@mixin boxSetting {
     width: 100%;
-    height: 100%;
+    position: relative;
+    
+}
+
+.lgGridBox {
+
+    @include boxSetting;
+    grid-area: span 2 / span 2;
+
+    .boxImage {
+        // position: absolute;
+        width: 100%;
+        height: 100%;
+        // top: 0;
+        // left: 0;
+    }
+}
+
+.smGridBox {
+
+    @include boxSetting;
+    grid-area: span 1 / span 1;
+
+    .boxImage {
+        // position: absolute;
+        width: 100%;
+        height: 100%;
+        // top: 0;
+        // left: 0;
+    }
 }
