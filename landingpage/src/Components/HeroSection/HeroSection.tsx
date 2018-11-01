@@ -20,9 +20,13 @@ export default class HeroSection extends React.Component {
         <h1 className="Punchline">
           Support Your Beloved <br /> Creative Media Projects
         </h1>
-        <h3>Invest into what you believe in. Don't be an outsider.</h3>
-        <InputBox message="Subscribe for updates" />
-        <Button>Subscribe</Button>
+        <p>Invest into what you believe in. Don't be an outsider.</p>
+        <div className="subscribeSection">
+          <div className="emailInput">
+            <InputBox message="Subscribe for updates" />
+          </div>
+          <Button color="warning" id="button">Subscribe</Button>
+        </div>
       </header>
     );
   }
