@@ -1,17 +1,22 @@
-#floatingCard {
-  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
-  width: 80vw;
-  float: left;
-  position: relative;
-  left: 10%;
-  padding:50px;
-}
+@import "src/Style/Templates";
 
-.logoImg {
-  width: 200px;
-}
+.fullWidth {
+  @include fullScreenWidthCenter;
 
-.column{
-    margin: auto;
-    text-align: center;
+  #floatingCard {
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.75);
+    width: 80vw;
+
+
+    // padding: 30%;
+
+    .column {
+      margin: auto;
+      text-align: center;
+
+      .logoImg {
+        width: 200px;
+      }
+    }
+  }
 }

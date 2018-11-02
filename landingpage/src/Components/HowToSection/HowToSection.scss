@@ -1,3 +1,5 @@
-.fullWidth {
-    width: 100vw;
+@import "src/Style/Templates";
+
+.fullWidthCont {
+    @include fullScreenWidthCenter;
 }
