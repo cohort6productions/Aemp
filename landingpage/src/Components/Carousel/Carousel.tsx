@@ -25,7 +25,7 @@ const items = [
     }
 ];
 
-class Example extends Component<{}, { activeIndex: number }> {
+export default class Example extends Component<{}, { activeIndex: number }> {
     public animating: boolean;
 
     constructor(props: {}) {
@@ -94,6 +94,3 @@ class Example extends Component<{}, { activeIndex: number }> {
         );
     }
 }
-
-
-export default Example;
