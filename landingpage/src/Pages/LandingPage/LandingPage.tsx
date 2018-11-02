@@ -9,6 +9,7 @@ import CreatorProjectGridDisplay from "src/Components/CreatorProjectGridDisplay/
 import Footer from "src/Components/Footer/Footer";
 import FooterSection from "src/Components/FooterSection/FooterSection";
 import HeroSection from "src/Components/HeroSection/HeroSection";
+import HowToSection from "src/Components/HowToSection/HowToSection";
 import PartnersCard from "src/Components/PartnersCard/ParntersCard";
 import Team from "src/Components/Team/Team";
 // Importing interfaces
@@ -19,6 +20,7 @@ export default class LandingPage extends React.Component {
       <div className="landingPage">
         <HeroSection />
         <CreatorProjectGridDisplay />
+        <HowToSection />
         <PartnersCard />
         <Team />
         <FooterSection />
