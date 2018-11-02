@@ -10,7 +10,7 @@ export default class HowToCarousel extends React.Component {
     const settings = {
       centreMode: true,
       centrePadding: "60px",
-      className: "center",
+      className: "center carousel",
       dots: true,
       infinite: true,
       slidesToScroll: 1,
