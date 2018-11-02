@@ -31,8 +31,8 @@ export default class ICreatorProjectBox extends React.Component<
         // style={{ backgroundImage: `url(${this.props.image})` }}
       >
         <img className="boxImage" src={this.props.image} alt="" />
-        <div className="nameTag">
-          <span className="nameTxt text-white">{this.props.name}</span>
+        <div className="nameTag rounded">
+          <span className="nameTxt text-white rounded">{this.props.name}</span>
         </div>
       </div>
     );
