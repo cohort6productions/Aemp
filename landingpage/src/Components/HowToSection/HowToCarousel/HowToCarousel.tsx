@@ -9,7 +9,7 @@ export default class HowToCarousel extends React.Component {
   public render() {
     const settings = {
       centreMode: true,
-      centrePadding: "600px",
+      centrePadding: "60px",
       className: "center",
       dots: true,
       infinite: true,
