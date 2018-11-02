@@ -5,7 +5,6 @@ import * as React from "react";
 // Importing react routering
 
 // Importing UI elements
-// import Carousel from "src/Components/Carousel/Carousel";
 import CreatorProjectGridDisplay from "src/Components/CreatorProjectGridDisplay/CreatorProjectGridDisplay";
 import Footer from "src/Components/Footer/Footer";
 import FooterSection from "src/Components/FooterSection/FooterSection";
@@ -21,8 +20,7 @@ export default class LandingPage extends React.Component {
       <div className="landingPage">
         <HeroSection />
         <CreatorProjectGridDisplay />
-        <HowToSection />
-        {/* <Carousel /> */}
+        <HowToSection />S
         <PartnersCard />
         <Team />
         <FooterSection />
