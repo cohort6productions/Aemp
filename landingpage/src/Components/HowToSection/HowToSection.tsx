@@ -14,7 +14,7 @@ import HowToCarousel from "./HowToCarousel/HowToCarousel";
 export default class HowToSection extends React.PureComponent {
   public render() {
     return (
-      <div className="fullWidth">
+      <div className="fullWidthCont">
         <SectionHeader header="How To" subHeader="Enjoy a straightforward process from beginning to end"/>
         <HowToCarousel />
       </div>
