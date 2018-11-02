@@ -34,46 +34,47 @@ export default class NavBar extends React.Component<{}, INavBarState> {
   }
   public render() {
     return (
-      <div id="NavBar">
-        <Navbar light={true} expand="md">
-          <NavbarBrand href="/">
-            <img className="navLogo" src={Logo} alt="Aemp Logo" />
-          </NavbarBrand>
-          <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar={true}>
-            <Nav navbar={true}>
-              <NavItem>
-                <NavLink href="/components/" className="links">
-                  SEARCH
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/components/" className="links">
-                  HOW IT WORKS
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/components/" className="links">
-                  PARTNERS
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/components/" className="links">
-                  CONTACT US
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/components/" className="links">
-                  LANGUAGE
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <Button color={"warning"}>Login/Signup</Button>
-              </NavItem>
-            </Nav>
-          </Collapse>
-        </Navbar>
-      </div>
+      // <div id="NavBar">
+      <Navbar className="navCenter" light={true} expand="lg">
+        <NavbarBrand href="/">
+          <img className="navLogo" src={Logo} alt="Aemp Logo" />
+        </NavbarBrand>
+        <NavbarToggler onClick={this.toggle} />
+        <Collapse isOpen={this.state.isOpen} navbar={true}>
+          <Nav navbar={true}>
+            <NavItem>
+              <NavLink href="/components/" className="navLinks text-white">
+                SEARCH
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/components/" className="navLinks text-white">
+                HOW IT WORKS
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/components/" className="navLinks text-white">
+                PARTNERS
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/components/" className="navLinks text-white">
+                CONTACT US
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/components/" className="navLinks text-white">
+                LANGUAGE
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <Button className={"submit"} color={"warning"}>
+                Login/Signup
+              </Button>
+            </NavItem>
+          </Nav>
+        </Collapse>
+      </Navbar>
     );
   }
 }
