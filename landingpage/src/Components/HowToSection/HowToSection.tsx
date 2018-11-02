@@ -6,6 +6,8 @@ import "./HowToSection.scss";
 // Importing reduc and friends
 // Importing react routering
 // Importing UI elements
+
+import SectionHeader from "src/Components/SectionHeader/SectionHeader";
 import HowToCarousel from "./HowToCarousel/HowToCarousel";
 // Importing interfaces
 
@@ -13,7 +15,7 @@ export default class HowToSection extends React.PureComponent {
   public render() {
     return (
       <div className="fullWidth">
-        <h2> Single Item</h2>
+        <SectionHeader header="How To" subHeader="Enjoy a straightforward process from beginning to end"/>
         <HowToCarousel />
       </div>
     );
