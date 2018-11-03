@@ -1,7 +1,5 @@
+@import "src/Style/Templates";
+
 .fullWidthCont {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include fullScreenWidthCenter;
 }
