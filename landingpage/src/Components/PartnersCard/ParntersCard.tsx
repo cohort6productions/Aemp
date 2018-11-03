@@ -30,23 +30,22 @@ export default class PartnersCard extends React.Component {
           <SectionHeader {...headerContent} />
           <Container className="float-center">
             <Row>
-              <Col xs="12" sm="12" md="6" lg="3" className="column">
+              <Col sm="12" md="6" lg="3" className="column">
                 <img className="logoImg" src={vtv} alt="" />
               </Col>
-              <Col xs="12" sm="12" md="6" lg="3" className="column">
+              <Col sm="12" md="6" lg="3" className="column">
                 <img className="logoImg" src={kpop} alt="" />
               </Col>
-              <Col xs="12" sm="12" md="6" lg="3" className="column">
+              <Col sm="12" md="6" lg="3" className="column">
                 <img className="logoImg" src={capcom} alt="" />
               </Col>
-              <Col xs="12" sm="12" md="6" lg="3" className="column">
+              <Col sm="12" md="6" lg="3" className="column">
                 <img className="logoImg" src={lol} alt="" />
               </Col>
             </Row>
           </Container>
         </div>
       </div>
-
     );
   }
 }

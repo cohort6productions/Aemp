@@ -20,7 +20,7 @@ export default class LandingPage extends React.Component {
       <div className="landingPage">
         <HeroSection />
         <CreatorProjectGridDisplay />
-        <HowToSection />S
+        <HowToSection />
         <PartnersCard />
         <Team />
         <FooterSection />

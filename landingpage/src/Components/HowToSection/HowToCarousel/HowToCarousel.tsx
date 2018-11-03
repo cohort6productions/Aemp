@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "./HowToCarousel.scss";
 
 import HowToCard from "./HowToCard/HowToCard";
+import Creator from "./img/creator.jpg";
 
 export default class HowToCarousel extends React.Component {
   public render() {
@@ -26,6 +27,7 @@ export default class HowToCarousel extends React.Component {
             content={
               "List your media project or yourself as cast or crew. Start financing for your media project now! Or offer your talents as a potential cast member or crew."
             }
+            picture={Creator}
           />
         </div>
         <div className={"howToCard"}>
