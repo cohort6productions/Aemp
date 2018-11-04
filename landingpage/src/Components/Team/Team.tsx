@@ -66,7 +66,7 @@ export default class Team extends React.Component<{}, {}> {
       <div className="teamSection">
         <SectionHeader {...headerContent} />
         <Row>
-          <Col sm="12" md="6">
+          <Col sm="12" md="6" lg="6" xl="3">
             <TeamMember
               facebookLink="2"
               instagramLink="1"
@@ -77,7 +77,7 @@ export default class Team extends React.Component<{}, {}> {
               twitterLink="1"
             />
           </Col>
-          <Col sm="12" md="6">
+          <Col sm="12" md="6" lg="6" xl="3">
             <TeamMember
               facebookLink="2"
               instagramLink="1"
@@ -88,7 +88,7 @@ export default class Team extends React.Component<{}, {}> {
               twitterLink="1"
             />
           </Col>{" "}
-          <Col sm="12" md="6">
+          <Col sm="12" md="6" lg="6" xl="3">
             <TeamMember
               facebookLink="2"
               instagramLink="1"
@@ -99,7 +99,7 @@ export default class Team extends React.Component<{}, {}> {
               twitterLink="1"
             />
           </Col>
-          <Col sm="12" md="6">
+          <Col sm="12" md="6" lg="6" xl="3">
             <TeamMember
               facebookLink="2"
               instagramLink="1"
