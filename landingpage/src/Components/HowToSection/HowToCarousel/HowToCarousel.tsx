@@ -13,6 +13,7 @@ import Platform from "./img/platform.svg";
 export default class HowToCarousel extends React.Component {
   public render() {
     const settings = {
+      arrows: false,
       centerMode: true,
       centerPadding: "10%",
       className: "carousel",

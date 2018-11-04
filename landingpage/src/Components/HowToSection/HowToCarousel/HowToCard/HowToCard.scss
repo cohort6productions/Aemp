@@ -15,17 +15,25 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 300px;
 }
 
 .howToImage {
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 600px;
+}
 
-  .howToCard{
-      height: 50vh;
-      box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.75);
-      overflow: hidden;
-  }
+// .howToCard {
+//   overflow: hidden;
+//   padding: 10px 10px 10px;
+//   height: 70vh;
+// }
+
+.card {
+  margin: 10px 10px 10px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.75);
+  height: 100%;
+}

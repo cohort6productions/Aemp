@@ -12,8 +12,9 @@ export default class HowToCard extends React.Component<IHowToCardProps> {
   }
   public render() {
     return (
-      <div className="howToCard">
-        <Row>
+      // <div className="howToCard">
+      <div className="card">
+        <Row style={{ alignItems: "center" }}>
           <Col md="12" lg="6" className="howToContent">
             <h1>{this.props.heading}</h1>
             <h2>{this.props.subHeading}</h2>
@@ -28,6 +29,7 @@ export default class HowToCard extends React.Component<IHowToCardProps> {
           </Col>
         </Row>
       </div>
+      // </div>
     );
   }
 }
