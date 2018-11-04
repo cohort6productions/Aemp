@@ -4,7 +4,12 @@ import Slider from "react-slick";
 import "./HowToCarousel.scss";
 
 import HowToCard from "./HowToCard/HowToCard";
-import Creator from "./img/creator.jpg";
+
+import Backer from "./img/backer.svg";
+import Creator from "./img/creator.svg";
+import Launch from "./img/launch.svg";
+import Platform from "./img/platform.svg";
+
 
 export default class HowToCarousel extends React.Component {
   public render() {
@@ -37,6 +42,7 @@ export default class HowToCarousel extends React.Component {
             content={
               "Follow and gain monitoring right as a token holder, giving the same transparency to progress as a co-producer and voting member with updates on milestones."
             }
+            picture={Backer}
           />
         </div>
         <div className={"howToCard"}>
@@ -46,6 +52,7 @@ export default class HowToCarousel extends React.Component {
             content={
               "Earn or Contribute to AEMP utility token. Each media or talent listing earns you a token;or sign up to contribute to the AEMP token. Monitor and trade media asset tokens via blockchain for profit sharing or trading AEMP on an exchange."
             }
+            picture={Platform}
           />
         </div>
         <div className={"howToCard"}>
@@ -55,6 +62,7 @@ export default class HowToCarousel extends React.Component {
             content={
               "AEMP gives utility token holders of AEMP token to contribute or participate in fractional ownership and co-producer rights to monitor, vote, and monetize each media asset."
             }
+            picture={Launch}
           />
         </div>
       </Slider>
