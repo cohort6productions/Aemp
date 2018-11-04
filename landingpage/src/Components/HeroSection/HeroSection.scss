@@ -3,13 +3,11 @@
 .fullPage {
   width: 100vw;
   //   height: 100vh;
-  background-image: linear-gradient(
-      120deg,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 0) 68.9%,
-      $orange 69%,
-      $orange 100%
-    ),
+  background-image: linear-gradient(120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 68.9%,
+    $orange 69%,
+    $orange 100%),
     linear-gradient(rgba(25, 118, 210, 0.8), rgba(25, 118, 210, 0.8)),
     url("./Images/MK.181030.AEMP.WEBW.ConcertParty.jpg");
   background-attachment: scroll;
@@ -19,7 +17,7 @@
 
 #hero {
   color: white;
-  padding: 10px 10px 200px 10px;
+  padding: 10px 10px 200px 64px;
 }
 
 h1 {
