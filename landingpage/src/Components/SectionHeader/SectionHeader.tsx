@@ -8,7 +8,6 @@ import "./SectionHeader.scss";
 // Importing react routering
 
 // Importing UI elements
-import { Card } from "reactstrap";
 
 // Importing interfaces
 import { ISectionHeaderProps } from "src/Interfaces/Interfaces";
@@ -23,7 +22,7 @@ export default class SectionHeader extends React.Component<
     return (
       <div className="sectionHeaderContainer">
         <h2 className="sectionHeader"> {this.props.header} </h2>
-        <Card className="sectionHeaderDivider" />
+        <div className="sectionHeaderDivider" />
         <span className="sectionSubHeader"> {this.props.subHeader} </span>
       </div>
     );
