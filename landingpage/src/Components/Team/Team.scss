@@ -1,48 +1,42 @@
 @import "src/Style/Templates";
 
 .teamSection {
-    width: 100%;
-    padding: 0 17.5%;
-    margin: 10% 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  width: 100%;
+  padding: 0 17.5%;
+  margin: 10% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-    .teamContainer {
-        display: grid;
-        width: 100%;
-        padding: 0 10%;
+//   .teamContainer {
+//     width: 100%;
+//     padding: 0 10%;
 
+//     @include for-size(phone-only) {
+//       grid-template-columns: 1fr;
+//       grid-gap: 1%;
+//     }
 
-        @include for-size(phone-only) {
-            grid-template-columns: 1fr;
-            grid-gap: 1%;
-        }
+//     @include for-size(tablet-portrait-up) {
+//       grid-template-columns: 1fr;
+//       grid-gap: 3%;
+//     }
 
-        @include for-size(tablet-portrait-up) {
-            grid-template-columns: 1fr;
-            grid-gap: 3%;
-        }
+//     @include for-size(tablet-landscape-up) {
+//       grid-gap: 5vw;
+//       grid-template-columns: repeat(2, 1fr);
+//     }
 
-        @include for-size(tablet-landscape-up) {
-            grid-gap: 5vw;
-            grid-template-columns: repeat(2, 1fr);
-        }
+//     @include for-size(desktop-up) {
+//       grid-gap: 5vw;
+//       grid-template-columns: repeat(2, 1fr);
+//     }
 
-        @include for-size(desktop-up) {
-            grid-gap: 5vw;
-            grid-template-columns: repeat(2, 1fr);
-        }
+//     @include for-size(big-desktop-up) {
+//       grid-gap: 10%;
+//       grid-template-columns: repeat(2, 1fr);
+//     }
 
-        @include for-size(big-desktop-up) {
-            grid-gap: 10%;
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-
-
-        justify-items: center;
-
-
-    }
+//     justify-items: center;
+//   }
 }
