@@ -35,7 +35,7 @@ export default class HowToCarousel extends React.Component {
     };
     return (
       <Slider {...settings}>
-        <div className={"howToCard"}>
+        <div>
           <HowToCard
             heading={"Creator"}
             subHeading={"Producers, Writers and Talents"}
@@ -45,7 +45,7 @@ export default class HowToCarousel extends React.Component {
             picture={Creator}
           />
         </div>
-        <div className={"howToCard"}>
+        <div>
           <HowToCard
             heading={"Backers"}
             subHeading={"Producers, Individuals, Institutions, Funds"}
@@ -55,7 +55,7 @@ export default class HowToCarousel extends React.Component {
             picture={Backer}
           />
         </div>
-        <div className={"howToCard"}>
+        <div>
           <HowToCard
             heading={"Monetization"}
             subHeading={"Media Acquisition, Streaming, Licensing"}
@@ -65,7 +65,7 @@ export default class HowToCarousel extends React.Component {
             picture={Platform}
           />
         </div>
-        <div className={"howToCard"}>
+        <div>
           <HowToCard
             heading={"AEMP"}
             subHeading={"Fee and Equity"}

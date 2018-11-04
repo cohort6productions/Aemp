@@ -67,8 +67,9 @@ export default class NavBar extends React.Component<{}, INavBarState> {
                 LANGUAGE
               </NavLink>
             </NavItem>
+            <div style={{ width: "85px" }} />
             <NavItem>
-              <Button className={"submit"} color={"warning"}>
+              <Button id="button_login" className={"submit"} color={"warning"}>
                 Login/Signup
               </Button>
             </NavItem>
