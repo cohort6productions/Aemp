@@ -7,12 +7,18 @@
   text-align: center;
   margin-bottom: 5%;
 
-  .sectionHeader {}
+  .sectionHeader {
+    font-size: 180%;
+    font-weight: 600;
+  }
 
   .sectionHeaderDivider {
-    width: 10vw;
+    width: 15vw;
+    border: 2px solid orange;
     background-color: orange;
   }
 
-  .sectionHeader {}
+  .sectionSubHeader {
+    margin: 2% 15%;
+  }
 }

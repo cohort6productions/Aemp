@@ -78,10 +78,13 @@ $projectTagHeaderHeight: 7vmin;
         .gridBox {
             width: 100%;
             height: auto;
+            position: relative;
+
 
             .boxImage {
                 width: 100%;
                 height: auto;
+                @include boxShadow;
             }
         }
 
