@@ -2,7 +2,13 @@
 
 .memberCard {
     text-align: center;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    // margin: 5%;
+    // padding: 2%;
+    height: auto;
     @include boxShadow;
     // box-shadow: 10px 5px 10px #888888;
 
@@ -10,8 +16,11 @@
 
     .memberImage {
         width: 100%;
-        margin-bottom: 5%;
+        height: auto;
+        // margin-bottom: 5%;
     }
+
+    .memberContent {}
 
     .memberName {}
 
