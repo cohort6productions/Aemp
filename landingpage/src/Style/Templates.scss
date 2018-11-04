@@ -28,6 +28,10 @@ $blue: rgba(25, 118, 210, 1);
     color: #1976D2;
 }
 
+@mixin boxShadow{
+    box-shadow: 4px 5px 5px rgba(0, 0, 0, .25);
+}
+
 
 @mixin for-size($range) {
     $phone-upper-boundary: 600px;
