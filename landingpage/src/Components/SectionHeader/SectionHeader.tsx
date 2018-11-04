@@ -15,7 +15,7 @@ import { ISectionHeaderProps } from "src/Interfaces/Interfaces";
 
 export default class SectionHeader extends React.Component<
   ISectionHeaderProps
-  > {
+> {
   constructor(props: ISectionHeaderProps) {
     super(props);
   }
@@ -24,7 +24,7 @@ export default class SectionHeader extends React.Component<
       <div className="sectionHeaderContainer">
         <h2 className="sectionHeader"> {this.props.header} </h2>
         <Card className="sectionHeaderDivider" />
-        <h3 className="sectionSubHeader"> {this.props.subHeader} </h3>
+        <span className="sectionSubHeader"> {this.props.subHeader} </span>
       </div>
     );
   }

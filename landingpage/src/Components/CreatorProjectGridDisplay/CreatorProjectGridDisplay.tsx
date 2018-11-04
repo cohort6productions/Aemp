@@ -10,14 +10,14 @@ import Cowsep from "./Images/cowsep.jpg";
 import Eunkyung from "./Images/cute.jpg";
 import Evos from "./Images/evos.png";
 import Soyoung from "./Images/iu.png";
-import Johye from "./Images/khs.jpg";
+import Jihye from "./Images/khs.jpg";
 import Bohye from "./Images/snsd.jpg";
 
 // Importing reduc and friends
 // Importing react routering
 
 // Importing UI elements
-import ICreatorProjectBox from "./CreatorProjectBox/CreatorProjectBox";
+// import ICreatorProjectBox from "./CreatorProjectBox/CreatorProjectBox";
 
 // Importing interfaces
 import { ICreatorProjectBoxProps } from "src/Interfaces/Interfaces";
@@ -38,7 +38,7 @@ const tempCreators: ICreatorProjectBoxProps[] = [
   {
     description: "TBA",
     highlight: true,
-    image: Johye,
+    image: Jihye,
     name: "Jihye Choi"
   },
   {
@@ -77,9 +77,24 @@ export default class CreatorProjectGridDisplay extends React.Component {
           </div>
         </div>
         <div className="creatorProjectContainer">
-          {tempCreators.map((creator, i) => {
-            return <ICreatorProjectBox {...creator} key={i} />;
-          })}
+          <div className="gridBox" id="img1">
+            <img src={tempCreators[0].image} alt="" className="boxImage" />
+          </div>
+          <div className="gridBox" id="img2">
+            <img src={tempCreators[1].image} alt="" className="boxImage" />
+          </div>
+          <div className="gridBox" id="img3">
+            <img src={tempCreators[2].image} alt="" className="boxImage" />
+          </div>
+          <div className="gridBox" id="img4">
+            <img src={tempCreators[3].image} alt="" className="boxImage" />
+          </div>
+          <div className="gridBox" id="img5">
+            <img src={tempCreators[4].image} alt="" className="boxImage" />
+          </div>
+          <div className="gridBox" id="img6">
+            <img src={tempCreators[5].image} alt="" className="boxImage" />
+          </div>
         </div>
       </div>
     );

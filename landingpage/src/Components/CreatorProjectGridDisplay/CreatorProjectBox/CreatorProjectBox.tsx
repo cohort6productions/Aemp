@@ -28,12 +28,12 @@ export default class ICreatorProjectBox extends React.Component<
     return (
       <div
         className={this.props.highlight ? "lgGridBox" : "smGridBox"}
-        // style={{ backgroundImage: `url(${this.props.image})` }}
+       
       >
         <img className="boxImage" src={this.props.image} alt="" />
-        <div className="nameTag rounded">
+        {/* <div className="nameTag rounded">
           <span className="nameTxt text-white rounded">{this.props.name}</span>
-        </div>
+        </div> */}
       </div>
     );
   }
