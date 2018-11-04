@@ -1,5 +1,5 @@
 @import "src/Style/Templates";
-$projectTagHeaderHeight: 8vw;
+$projectTagHeaderHeight: 7vmin;
 
 .projectSection {
     position: relative;
@@ -25,7 +25,7 @@ $projectTagHeaderHeight: 8vw;
 
             .tagIcon {
                 // width: calc($projectTagHeaderHeight * 20%);
-                width: 6vh;
+                width: 4vmin;
                 // height: 50%;
             }
 
@@ -42,34 +42,59 @@ $projectTagHeaderHeight: 8vw;
 
     .creatorProjectContainer {
         display: grid;
+        grid-gap: 1.3vmin;
         background-color: rgba(241, 241, 241, 0.8);
         width: 100%;
         padding: 5% 10%;
+        grid-auto-flow: dense;
+
 
 
         @include for-size(phone-only) {
-            grid-template-columns: 1fr;
+            grid-template-columns: 100%;
+            grid-auto-rows: auto;
         }
 
         @include for-size(tablet-portrait-up) {
-            grid-template-columns: 1fr;
+            grid-template-columns: 100%;
+            grid-auto-rows: auto;
         }
 
         @include for-size(tablet-landscape-up) {
             grid-template-columns: repeat(2, 1fr);
-
+            grid-auto-rows: auto;
         }
 
         @include for-size(desktop-up) {
             grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(3, 1fr);
+            grid-template-rows: repeat(3, auto);
         }
 
         @include for-size(big-desktop-up) {
             grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(3, 1fr);
-            padding: 5% 10%;
+            grid-template-rows: repeat(3, auto);
         }
+
+        .gridBox {
+            width: 100%;
+            height: auto;
+
+            .boxImage {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        #img3,
+        #img4 {
+            @include for-size(desktop-up) {
+                grid-row: span 2;
+                grid-column: span 2;
+            }
+
+
+        }
+
 
 
 
