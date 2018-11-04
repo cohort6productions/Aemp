@@ -10,15 +10,25 @@ import Creator from "./img/creator.svg";
 import Launch from "./img/launch.svg";
 import Platform from "./img/platform.svg";
 
-
 export default class HowToCarousel extends React.Component {
   public render() {
     const settings = {
-      centreMode: true,
-      centrePadding: "60px",
-      className: "center carousel",
+      arrows: false,
+      centerMode: true,
+      centerPadding: "10%",
+      className: "carousel",
       dots: true,
       infinite: true,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            centerMode: false,
+            slidesToShow: 1
+          }
+        }
+      ],
       slidesToScroll: 1,
       slidesToShow: 1,
       speed: 500
