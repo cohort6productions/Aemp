@@ -34,14 +34,13 @@ export default class NavBar extends React.Component<{}, INavBarState> {
   }
   public render() {
     return (
-      // <div id="NavBar">
       <Navbar className="navCenter" light={true} expand="lg">
         <NavbarBrand href="/">
           <img className="navLogo" src={Logo} alt="Aemp Logo" />
         </NavbarBrand>
         <NavbarToggler onClick={this.toggle} />
         <Collapse isOpen={this.state.isOpen} navbar={true}>
-          <Nav className="" navbar={true}>
+          <Nav className="navbar" navbar={true}>
             <NavItem>
               <NavLink href="/components/" className="navLinks text-white">
                 SEARCH

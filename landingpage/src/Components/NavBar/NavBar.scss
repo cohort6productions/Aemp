@@ -7,6 +7,10 @@
   align-items: center;
   justify-items: center;
 
+  .navbar {
+    padding-top: 17px;
+  }
+
   .navLogo {
     @include for-size(phone-only) {
       width: 30vw;
@@ -30,12 +34,11 @@
   }
 
   .navLinks {
-
     font-size: 14px; // 1.3rem;
     // font-size: 1.999rem;
     font-weight: inherit;
     line-height: 1.3;
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
     font-weight: 600;
   }
 
