@@ -35,41 +35,46 @@ export default class NavBar extends React.Component<{}, INavBarState> {
   public render() {
     return (
       <Navbar className="navCenter" light={true} expand="lg">
-        <NavbarBrand href="/">
+        <NavbarBrand href="#">
           <img className="navLogo" src={Logo} alt="Aemp Logo" />
         </NavbarBrand>
-        <NavbarToggler onClick={this.toggle} style={{ margin: "0px 0px 0px 100px" }} />
+        <NavbarToggler onClick={this.toggle} id="opened"/>
         <Collapse isOpen={this.state.isOpen} navbar={true}>
-          <Nav className="navbar" navbar={true}>
-            <NavItem>
-              <NavLink href="/components/" className="navLinks text-white">
-                SEARCH
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/components/" className="navLinks text-white">
-                HOW IT WORKS
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/components/" className="navLinks text-white">
-                PARTNERS
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/components/" className="navLinks text-white">
-                CONTACT US
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/components/" className="navLinks text-white">
-                LANGUAGE
-              </NavLink>
-            </NavItem>
-            <Button id="buttonLogin" className={"submit"} color={"warning"}>
-              Login/Signup
+          <div id="linksAndButton">
+            <Nav className="navbar" navbar={true}>
+              <NavItem>
+                <NavLink href="/components/" className="navLinks text-white">
+                  SEARCH
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/components/" className="navLinks text-white">
+                  HOW IT WORKS
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/components/" className="navLinks text-white">
+                  PARTNERS
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/components/" className="navLinks text-white">
+                  CONTACT US
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/components/" className="navLinks text-white">
+                  LANGUAGE
+                </NavLink>
+              </NavItem>
+            </Nav>
+            <Button
+              id="buttonLogin"
+              color={"warning"}
+            >
+              Login/Register
             </Button>
-          </Nav>
+          </div>
         </Collapse>
       </Navbar>
     );

@@ -7,53 +7,23 @@
   align-items: center;
   justify-items: center;
 
-  .navbar {
-    padding-top: 17px;
-    @include for-size(phone-only) {
-      width: 100vw;
-    }
-
-    @include for-size(tablet-portrait-up) {
-      width: 100vw;
-    }
-
-    @include for-size(tablet-landscape-up) {
-      width: 80vw;
-    }
-
-    @include for-size(desktop-up) {
-      width: 80vw;
-    }
-
-    @include for-size(big-desktop-up) {
-      width: 80vw;
-    }
-
-    
-  }
-
   .navLogo {
     @include for-size(phone-only) {
-      width: 30vw;
+      width: 110px;
     }
-
     @include for-size(tablet-portrait-up) {
-      width: 20vw;
+      width: 120px;
     }
-
     @include for-size(tablet-landscape-up) {
-      width: 15vw;
+      width: 130px;
     }
-
     @include for-size(desktop-up) {
-      width: 10vw;
+      width: 140px;
     }
-
     @include for-size(big-desktop-up) {
-      width: 10vw;
+      width: 150px;
     }
   }
-
   .navLinks {
     font-size: 14px; // 1.3rem;
     // font-size: 1.999rem;
@@ -62,10 +32,6 @@
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     font-weight: 600;
   }
-
-  .submit {
-    color: white;
-  }
 }
 
 @mixin links {
@@ -73,26 +39,19 @@
 }
 
 #buttonLogin {
-  // align-content: right;
   @include boxShadow;
+  color: white;
+}
 
-  @include for-size(phone-only) {
-    margin-left: 0px;
-  }
+#linksAndButton {
+  width: 75vw;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
 
-  @include for-size(tablet-portrait-up) {
-    margin-left: 0px;
-  }
-
-  @include for-size(tablet-landscape-up) {
-    margin-left: 150px;
-  }
-
-  @include for-size(desktop-up) {
-    margin-left: 300px;
-  }
-
-  @include for-size(big-desktop-up) {
-    margin-left: 300px;
-  }
+.show {
+  display: flex;
+  flex-direction: column;
 }
