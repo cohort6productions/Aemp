@@ -1,56 +1,91 @@
+@import "src/Style/Templates";
+
 #footer {
   margin: 50px;
-}
+  .footerColumn {
+    margin: 10px 0px;
+    #footerLogo {
+      margin-top: -25px;
+    }
+    .socialIcon {
+      padding-top: 10px;
+      width: 100%;
+      align-content: left;
+    }
+    .title {
+      color: #ffa800;
+      font-weight: bold;
+    }
+    #footerSubscribe {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: flex-start;
+      #inputBox {
+        width: 80%;
+      }
+      #buttonArrow {
+        color: white;
+      }
+    }
+  }
+  #divisionLine {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgb(224, 224, 224);
+    margin: 75px 0;
+  }
 
-.title {
-  color: #ffa800;
-  font-weight: bold;
-}
+  #disclaimer {
+    margin-top: 50px;
+    p {
+      font-size: 12px;
+    }
 
-.inputBox {
-  width: 90%;
-}
+    @include for-size(phone-only) {
+      #leftDisclaimer {
+        text-align: left;
+      }
+      #rightDisclaimer {
+        text-align: left;
+      }
+    }
 
-.footerSubscribe {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-}
+    @include for-size(tablet-portrait-up) {
+      #leftDisclaimer {
+        text-align: left;
+      }
+      #rightDisclaimer {
+        text-align: left;
+      }
+    }
 
-.footerColumn {
-  margin: 10px 0px;
-}
+    @include for-size(tablet-landscape-up) {
+      #leftDisclaimer {
+        text-align: left;
+      }
+      #rightDisclaimer {
+        text-align: right;
+      }
+    }
 
-.socialIcon {
-  margin-top: 15px;
-  width: 15rem;
-}
-#buttonArrow {
-  color: white;
-}
+    @include for-size(desktop-up) {
+      #leftDisclaimer {
+        text-align: left;
+      }
+      #rightDisclaimer {
+        text-align: right;
+      }
+    }
 
-#disclaimer {
-  margin-top: 50px;
-  font-size: 12px;
-}
-
-#leftDisclaimer {
-  text-align: left;
-}
-
-#rightDisclaimer {
-  text-align: right;
-}
-
-#padding{
-  margin-top: 100px;
-}
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid rgb(224, 224, 224);
-  margin: 1em 0;
-  padding: 0;
+    @include for-size(big-desktop-up) {
+      #leftDisclaimer {
+        text-align: left;
+      }
+      #rightDisclaimer {
+        text-align: right;
+      }
+    }
+  }
 }

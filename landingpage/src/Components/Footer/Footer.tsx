@@ -18,24 +18,10 @@ export default class Footer extends React.Component {
         <Row>
           <Col xs="12" sm="12" md="6" lg="3" className="footerColumn">
             <a href="#">
-              <img src={Logo} />
+              <img src={Logo} id="footerLogo" />
             </a>
             <br />
             <a href="mailto:info@ambrasia.com">info@ambrasia.com</a>
-          </Col>
-          <Col xs="12" sm="12" md="6" lg="3" className="footerColumn">
-            <a href="#" className="title">
-              Search
-            </a>
-            <br />
-            <a href="#">Creators</a>
-            <br />
-            <a href="#">Projects</a>
-          </Col>
-          <Col xs="12" sm="12" md="6" lg="3" className="footerColumn">
-            <a href="#" className="title">
-              Follow us
-            </a>
             <br />
             <Row className="socialIcon">
               <Col>
@@ -53,21 +39,40 @@ export default class Footer extends React.Component {
             </Row>
           </Col>
           <Col xs="12" sm="12" md="6" lg="3" className="footerColumn">
+            <a href="#" className="title">
+              Policies
+            </a>
+            <br />
+            <a href="#">Privacy Policy</a>
+            <br />
+            <a href="#">Terms and Conditions</a>
+            <br />
+            <a href="#">Cookie Policy</a>
+          </Col>
+          <Col xs="12" sm="12" md="6" lg="3" className="footerColumn">
+            <a href="#" className="title">
+              Search
+            </a>
+            <br />
+            <a href="#">Creators</a>
+            <br />
+            <a href="#">Projects</a>
+          </Col>
+
+          <Col xs="12" sm="12" md="6" lg="3" className="footerColumn">
             <p className="title">Subscribe</p>
-            <div className="footerSubscribe">
-              <Input className="inputBox" type="email" />
+            <div id="footerSubscribe">
+              <Input id="inputBox" type="email" />
               <Button color="secondary" id="buttonArrow">
                 >
               </Button>
             </div>
           </Col>
         </Row>
-        <div id="padding">
-          <hr />
-        </div>
+        <div id="divisionLine" />
         <Row id="disclaimer">
           <Col sm="12" md="6" id="leftDisclaimer">
-            <p>Made with love by Cohort 6 Productions</p>
+            <p>Made with &#10084; by Cohort 6 Productions</p>
           </Col>
           <Col sm="12" md="6" id="rightDisclaimer">
             <p>@2018 Ambrasia Multimedia Limited All rights reserved</p>
