@@ -70,6 +70,7 @@ export default class CreatorProjectGridDisplay extends React.Component {
             <img src={playButton} alt="" className="tagIcon" />
             <h3 className="tagText text-white">Creators </h3>
           </a>
+          <div className="hwDivider"/>
           <a href="./" className="singleTag">
             <img src={videoButton} alt="" className="tagIcon" />
             <h3 className="tagText text-white">Projects</h3>
