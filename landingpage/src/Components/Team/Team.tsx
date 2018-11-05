@@ -1,7 +1,8 @@
 import * as React from "react";
-import { Col, Row } from "reactstrap";
 import SectionHeader from "../SectionHeader/SectionHeader";
 import "./Team.scss";
+
+import {Col, Row} from "reactstrap";
 
 // import { ITeamProps } from "src/Interfaces/Interfaces";
 // import TeamMember from './TeamMember/TeamMember';
@@ -63,7 +64,7 @@ export default class Team extends React.Component<{}, {}> {
   }
   public render() {
     return (
-      <div className="teamSection">
+      <div className="teamHorizontalSection">
         <SectionHeader {...headerContent} />
         <Row>
           <Col sm="12" md="6" lg="6" xl="3">

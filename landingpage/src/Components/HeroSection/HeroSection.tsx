@@ -17,6 +17,7 @@ export default class HeroSection extends React.Component {
     return (
       <header className="fullPage" id="hero">
         <Navbar />
+        <div style={{ height: "150px" }} />
         <h1 className="Punchline text-white">
           Support Your Beloved <br /> Creative Media Projects
         </h1>
@@ -29,6 +30,7 @@ export default class HeroSection extends React.Component {
             Subscribe
           </Button>
         </div>
+        <div style={{ height: "50px" }} />
       </header>
     );
   }
