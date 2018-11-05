@@ -2,10 +2,7 @@ import * as React from "react";
 import SectionHeader from "../SectionHeader/SectionHeader";
 import "./Team.scss";
 
-import {Col, Row} from "reactstrap";
-
-// import { ITeamProps } from "src/Interfaces/Interfaces";
-// import TeamMember from './TeamMember/TeamMember';
+import { ITeamProps } from "src/Interfaces/Interfaces";
 
 import jason from "./Images/jason.jpg";
 import minsoo from "./Images/minsoo.jpg";
@@ -19,44 +16,44 @@ const headerContent = {
   subHeader: `Meet our amazing team members who made all this possible`
 };
 
-// const tempTeamInfo: ITeamProps[] = [
-//   {
-//     facebookLink: "2",
-//     instagramLink: "1",
-//     linkedinLink: "1",
-//     name: "Minsoo Kim",
-//     pictureLink: minsoo,
-//     title: "Founder and CEO",
-//     twitterLink: "1"
-//   },
-//   {
-//     facebookLink: "123",
-//     instagramLink: "123",
-//     linkedinLink: "123",
-//     name: "Reid Frasier",
-//     pictureLink: reid,
-//     title: "CTO",
-//     twitterLink: "123"
-//   },
-//   {
-//     facebookLink: "123",
-//     instagramLink: "123",
-//     linkedinLink: "123",
-//     name: "Jason Coyle",
-//     pictureLink: jason,
-//     title: "COO",
-//     twitterLink: "123"
-//   },
-//   {
-//     facebookLink: "123",
-//     instagramLink: "123",
-//     linkedinLink: "123",
-//     name: "Steve Nelson",
-//     pictureLink: steve,
-//     title: "General Counsel",
-//     twitterLink: "123"
-//   }
-// ];
+const tempTeamInfo: ITeamProps[] = [
+  {
+    facebookLink: "2",
+    instagramLink: "1",
+    linkedinLink: "1",
+    name: "Minsoo Kim",
+    pictureLink: minsoo,
+    title: "Founder and CEO",
+    twitterLink: "1"
+  },
+  {
+    facebookLink: "123",
+    instagramLink: "123",
+    linkedinLink: "123",
+    name: "Reid Frasier",
+    pictureLink: reid,
+    title: "CTO",
+    twitterLink: "123"
+  },
+  {
+    facebookLink: "123",
+    instagramLink: "123",
+    linkedinLink: "123",
+    name: "Jason Coyle",
+    pictureLink: jason,
+    title: "COO",
+    twitterLink: "123"
+  },
+  {
+    facebookLink: "123",
+    instagramLink: "123",
+    linkedinLink: "123",
+    name: "Steve Nelson",
+    pictureLink: steve,
+    title: "General Counsel",
+    twitterLink: "123"
+  }
+];
 
 export default class Team extends React.Component<{}, {}> {
   constructor(props: {}) {
@@ -66,57 +63,11 @@ export default class Team extends React.Component<{}, {}> {
     return (
       <div className="teamHorizontalSection">
         <SectionHeader {...headerContent} />
-        <Row>
-          <Col sm="12" md="6" lg="6" xl="3">
-            <TeamMember
-              facebookLink="2"
-              instagramLink="1"
-              linkedinLink="1"
-              name="Minsoo Kim"
-              pictureLink={minsoo}
-              title="Founder and CEO"
-              twitterLink="1"
-            />
-          </Col>
-          <Col sm="12" md="6" lg="6" xl="3">
-            <TeamMember
-              facebookLink="2"
-              instagramLink="1"
-              linkedinLink="1"
-              name="Reid Fraiser"
-              pictureLink={reid}
-              title="CTO"
-              twitterLink="1"
-            />
-          </Col>{" "}
-          <Col sm="12" md="6" lg="6" xl="3">
-            <TeamMember
-              facebookLink="2"
-              instagramLink="1"
-              linkedinLink="1"
-              name="Jason Coyle"
-              pictureLink={jason}
-              title="COO"
-              twitterLink="1"
-            />
-          </Col>
-          <Col sm="12" md="6" lg="6" xl="3">
-            <TeamMember
-              facebookLink="2"
-              instagramLink="1"
-              linkedinLink="1"
-              name="Steve Nelson"
-              pictureLink={steve}
-              title="General Counsel"
-              twitterLink="1"
-            />
-          </Col>
-        </Row>
-        {/* <div className="teamContainer">
-            {tempTeamInfo.map((member, i) => {
-              return <TeamMember {...member} key={i} />;
-            })}
-          </div> */}
+        <div className="memberGrid">
+          {tempTeamInfo.map((member, i) => {
+            return <TeamMember {...member} key={i} />;
+          })}
+        </div>
       </div>
     );
   }
