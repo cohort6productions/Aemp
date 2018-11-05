@@ -66,15 +66,14 @@ export default class CreatorProjectGridDisplay extends React.Component {
     return (
       <div className="projectSection">
         <div className="tagContainer">
-          <div className="singleTag">
+          <a href={"./"} className="singleTag">
             <img src={playButton} alt="" className="tagIcon" />
             <h3 className="tagText text-white">Creators </h3>
-          </div>
-
-          <div className="singleTag">
+          </a>
+          <a href="./" className="singleTag">
             <img src={videoButton} alt="" className="tagIcon" />
             <h3 className="tagText text-white">Projects</h3>
-          </div>
+          </a>
         </div>
         <div className="creatorProjectContainer">
           <div className="gridBox" id="img1">

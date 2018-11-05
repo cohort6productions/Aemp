@@ -41,8 +41,8 @@ export default class TeamMember extends React.Component<ITeamProps, {}> {
       <div className="memberCard">
         <img className="memberImage" src={this.props.pictureLink} />
         <div className="memberContent">
-          <h3 className="memberName">{this.props.name}</h3>
-          <span className="memberTitle">{this.props.title}</span>
+          <h4 className="memberName">{this.props.name}</h4>
+          <p className="memberTitle">{this.props.title}</p>
 
           <div className="socialRow">
             {this.props.facebookLink && (

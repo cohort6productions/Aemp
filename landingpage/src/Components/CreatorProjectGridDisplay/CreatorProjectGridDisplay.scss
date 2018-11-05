@@ -1,11 +1,31 @@
 @import "src/Style/Templates";
 $projectTagHeaderHeight: 7vmin;
 
+
 .projectSection {
     position: relative;
-    top: -$projectTagHeaderHeight;
     width: 100vw;
     padding: 0 15%;
+
+    @include for-size(phone-only) {
+        top: -10vh;
+    }
+
+    @include for-size(tablet-portrait-up) {
+        top: -10vh;
+    }
+
+    @include for-size(tablet-landscape-up) {
+        top: -10vh;
+    }
+
+    @include for-size(desktop-up) {
+        top: -10vh;
+    }
+
+    @include for-size(big-desktop-up) {
+        top: -10vh;
+    }
 
 
     // height: 100vh;
@@ -13,10 +33,29 @@ $projectTagHeaderHeight: 7vmin;
     .tagContainer {
         border-radius: 5px 5px 0 0;
         width: 100%;
-        height: $projectTagHeaderHeight;
         background-color: rgba(0, 78, 114, 0.8);
         display: flex;
         justify-content: space-around;
+
+        @include for-size(phone-only) {
+            height: 10vh;
+        }
+
+        @include for-size(tablet-portrait-up) {
+            height: 10vh;
+        }
+
+        @include for-size(tablet-landscape-up) {
+            height: 10vh;
+        }
+
+        @include for-size(desktop-up) {
+            height: 10vh;
+        }
+
+        @include for-size(big-desktop-up) {
+            height: 10vh;
+        }
 
         .singleTag {
             display: flex;
@@ -25,8 +64,28 @@ $projectTagHeaderHeight: 7vmin;
 
             .tagIcon {
                 // width: calc($projectTagHeaderHeight * 20%);
-                width: 4vmin;
+
                 // height: 50%;
+                @include for-size(phone-only) {
+                    width: 5vh;
+                }
+
+                @include for-size(tablet-portrait-up) {
+                    width: 5vh;
+                }
+
+                @include for-size(tablet-landscape-up) {
+                    width: 5vh;
+                }
+
+                @include for-size(desktop-up) {
+                    width: 5vh;
+                }
+
+                @include for-size(big-desktop-up) {
+                    width: 5vh;
+                }
+
             }
 
             .tagText {
@@ -34,6 +93,26 @@ $projectTagHeaderHeight: 7vmin;
                 font-weight: 600;
                 padding-left: 10%;
                 margin-bottom: 0;
+
+                @include for-size(phone-only) {
+                    font-size: 80%;
+                }
+
+                @include for-size(tablet-portrait-up) {
+                    font-size: 90%;
+                }
+
+                @include for-size(tablet-landscape-up) {
+                    font-size: 110%;
+                }
+
+                @include for-size(desktop-up) {
+                    font-size: 130%;
+                }
+
+                @include for-size(big-desktop-up) {
+                    font-size: 130%;
+                }
             }
 
         }
