@@ -61,7 +61,26 @@ const tempCreators: ICreatorProjectBoxProps[] = [
   }
 ];
 
-export default class CreatorProjectGridDisplay extends React.Component {
+export default class CreatorProjectGridDisplay extends React.Component<{}, { imageOne: boolean }> {
+  constructor(props: { imageOne: boolean }) {
+    super(props);
+
+    this.state = {
+      imageOne: false
+    }
+
+    this.closeHover = this.closeHover.bind(this);
+    this.openHover = this.openHover.bind(this);
+  }
+
+  public openHover = () => {
+    this.setState({ imageOne: true })
+  }
+
+  public closeHover = () => {
+    this.setState({ imageOne: false })
+  }
+
   public render() {
     return (
       <div className="projectSection">
@@ -70,14 +89,20 @@ export default class CreatorProjectGridDisplay extends React.Component {
             <img src={playButton} alt="" className="tagIcon" />
             <h3 className="tagText text-white">Creators </h3>
           </a>
-          <div className="hwDivider"/>
+          <div className="hwDivider" />
           <a href="./" className="singleTag">
             <img src={videoButton} alt="" className="tagIcon" />
             <h3 className="tagText text-white">Projects</h3>
           </a>
         </div>
         <div className="creatorProjectContainer">
-          <div className="gridBox" id="img1">
+          <div className="gridBox" id="img1" onMouseEnter={this.openHover}
+            onMouseLeave={this.closeHover}>
+            {(this.state.imageOne) && <div className="gridContent">
+              <h3>{tempCreators[0].name}</h3>
+              <p>{tempCreators[0].description}</p>
+            </div>
+            }
             <img src={tempCreators[0].image} alt="" className="boxImage" />
             <div className="cornerTag">
               <span className="tagText">
