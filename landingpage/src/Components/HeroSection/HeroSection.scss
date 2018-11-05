@@ -13,20 +13,85 @@
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center bottom;
+
+  .heroContent {
+    width: auto;
+    margin: 0 1.3rem;
+    padding-top: 30vh;
+    padding-bottom: 30vh;
+
+    @include for-size(phone-only) {
+      padding-top: 10vh;
+      padding-bottom: 10vh;
+    }
+
+    @include for-size(tablet-portrait-up) {
+      padding-top: 20vh;
+      padding-bottom: 20vh;
+    }
+
+    @include for-size(tablet-landscape-up) {
+      padding-top: 30vh;
+      padding-bottom: 30vh;
+    }
+
+    @include for-size(desktop-up) {
+      padding-top: 30vh;
+      padding-bottom: 30vh;
+    }
+
+    // @include for-size(big-desktop-up) {}
+
+    h2 {
+      @include for-size(phone-only) {
+        font-size: 1.7rem;
+        line-height: 2rem;
+      }
+
+      @include for-size(tablet-portrait-up) {
+        font-size: 2.15rem;
+        line-height: 2.5rem;
+      }
+
+      @include for-size(tablet-landscape-up) {
+        font-size: 3rem;
+        line-height: 3.5rem;
+      }
+
+      @include for-size(desktop-up) {
+        font-size: 3rem;
+        line-height: 3.5rem;
+      }
+
+      @include for-size(big-desktop-up) {
+        font-size: 3rem;
+        line-height: 3.5rem;
+      }
+
+      line-height: 3.5rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    p {
+      font-weight: 300;
+      margin: .8rem 0 1.3rem 0;
+    }
+
+
+  }
 }
 
-#hero {
-  color: white;
-  padding: 10px 10px 200px 64px;
-}
 
-h1 {
-  margin: 5px;
-  font-size: 48px;
-}
+
+// h1 {
+//   margin: 5px;
+//   font-size: 48px;
+// }
 
 .emailInput {
-  width: 43%;
+  // width: 43%;
+  min-width: 40%;
 }
 
 .subscribeSection {

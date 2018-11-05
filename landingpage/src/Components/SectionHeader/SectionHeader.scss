@@ -10,15 +10,17 @@
   .sectionHeader {
     font-size: 180%;
     font-weight: 600;
+    margin: 0;
   }
 
   .sectionHeaderDivider {
     width: 15vw;
+    margin: 0;
     border: 2px solid orange;
     background-color: orange;
   }
 
   .sectionSubHeader {
-    margin: 2% 15%;
+    margin: 2% 15% 2% 15%;
   }
 }
