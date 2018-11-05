@@ -3,7 +3,6 @@ import SectionHeader from "../SectionHeader/SectionHeader";
 import "./Team.scss";
 
 import { ITeamProps } from "src/Interfaces/Interfaces";
-// import TeamMember from './TeamMember/TeamMember';
 
 import jason from "./Images/jason.jpg";
 import minsoo from "./Images/minsoo.jpg";
