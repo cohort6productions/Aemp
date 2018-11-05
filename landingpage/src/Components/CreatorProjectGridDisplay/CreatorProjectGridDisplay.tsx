@@ -78,21 +78,51 @@ export default class CreatorProjectGridDisplay extends React.Component {
         <div className="creatorProjectContainer">
           <div className="gridBox" id="img1">
             <img src={tempCreators[0].image} alt="" className="boxImage" />
+            <div className="cornerTag">
+              <span className="tagText">
+                {tempCreators[0].name}
+              </span>
+            </div>
           </div>
           <div className="gridBox" id="img2">
             <img src={tempCreators[1].image} alt="" className="boxImage" />
+            <div className="cornerTag">
+              <span className="tagText">
+                {tempCreators[1].name}
+              </span>
+            </div>
           </div>
           <div className="gridBox" id="img3">
             <img src={tempCreators[2].image} alt="" className="boxImage" />
+            <div className="cornerTag">
+              <span className="tagText">
+                {tempCreators[2].name}
+              </span>
+            </div>
           </div>
           <div className="gridBox" id="img4">
             <img src={tempCreators[3].image} alt="" className="boxImage" />
+            <div className="cornerTag">
+              <span className="tagText">
+                {tempCreators[3].name}
+              </span>
+            </div>
           </div>
           <div className="gridBox" id="img5">
             <img src={tempCreators[4].image} alt="" className="boxImage" />
+            <div className="cornerTag">
+              <span className="tagText">
+                {tempCreators[4].name}
+              </span>
+            </div>
           </div>
           <div className="gridBox" id="img6">
             <img src={tempCreators[5].image} alt="" className="boxImage" />
+            <div className="cornerTag">
+              <span className="tagText">
+                {tempCreators[5].name}
+              </span>
+            </div>
           </div>
         </div>
       </div>
