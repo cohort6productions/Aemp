@@ -66,34 +66,64 @@ export default class CreatorProjectGridDisplay extends React.Component {
     return (
       <div className="projectSection">
         <div className="tagContainer">
-          <div className="singleTag">
+          <a href={"./"} className="singleTag">
             <img src={playButton} alt="" className="tagIcon" />
             <h3 className="tagText text-white">Creators </h3>
-          </div>
-
-          <div className="singleTag">
+          </a>
+          <div className="hwDivider"/>
+          <a href="./" className="singleTag">
             <img src={videoButton} alt="" className="tagIcon" />
             <h3 className="tagText text-white">Projects</h3>
-          </div>
+          </a>
         </div>
         <div className="creatorProjectContainer">
           <div className="gridBox" id="img1">
             <img src={tempCreators[0].image} alt="" className="boxImage" />
+            <div className="cornerTag">
+              <span className="tagText">
+                {tempCreators[0].name}
+              </span>
+            </div>
           </div>
           <div className="gridBox" id="img2">
             <img src={tempCreators[1].image} alt="" className="boxImage" />
+            <div className="cornerTag">
+              <span className="tagText">
+                {tempCreators[1].name}
+              </span>
+            </div>
           </div>
           <div className="gridBox" id="img3">
             <img src={tempCreators[2].image} alt="" className="boxImage" />
+            <div className="cornerTag">
+              <span className="tagText">
+                {tempCreators[2].name}
+              </span>
+            </div>
           </div>
           <div className="gridBox" id="img4">
             <img src={tempCreators[3].image} alt="" className="boxImage" />
+            <div className="cornerTag">
+              <span className="tagText">
+                {tempCreators[3].name}
+              </span>
+            </div>
           </div>
           <div className="gridBox" id="img5">
             <img src={tempCreators[4].image} alt="" className="boxImage" />
+            <div className="cornerTag">
+              <span className="tagText">
+                {tempCreators[4].name}
+              </span>
+            </div>
           </div>
           <div className="gridBox" id="img6">
             <img src={tempCreators[5].image} alt="" className="boxImage" />
+            <div className="cornerTag">
+              <span className="tagText">
+                {tempCreators[5].name}
+              </span>
+            </div>
           </div>
         </div>
       </div>
