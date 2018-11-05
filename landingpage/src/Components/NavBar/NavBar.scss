@@ -9,6 +9,27 @@
 
   .navbar {
     padding-top: 17px;
+    @include for-size(phone-only) {
+      width: 100vw;
+    }
+
+    @include for-size(tablet-portrait-up) {
+      width: 100vw;
+    }
+
+    @include for-size(tablet-landscape-up) {
+      width: 80vw;
+    }
+
+    @include for-size(desktop-up) {
+      width: 80vw;
+    }
+
+    @include for-size(big-desktop-up) {
+      width: 80vw;
+    }
+
+    
   }
 
   .navLogo {
@@ -49,4 +70,29 @@
 
 @mixin links {
   text-decoration: underline;
+}
+
+#buttonLogin {
+  // align-content: right;
+  @include boxShadow;
+
+  @include for-size(phone-only) {
+    margin-left: 0px;
+  }
+
+  @include for-size(tablet-portrait-up) {
+    margin-left: 0px;
+  }
+
+  @include for-size(tablet-landscape-up) {
+    margin-left: 150px;
+  }
+
+  @include for-size(desktop-up) {
+    margin-left: 300px;
+  }
+
+  @include for-size(big-desktop-up) {
+    margin-left: 300px;
+  }
 }
