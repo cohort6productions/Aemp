@@ -1,3 +1,5 @@
+@import "src/Style/Templates";
+
 .navCenter {
   width: 100%;
   display: flex;
@@ -6,7 +8,25 @@
   justify-items: center;
 
   .navLogo {
-    width: 202px; // 8vw;
+    @include for-size(phone-only) {
+      width: 30vw;
+    }
+
+    @include for-size(tablet-portrait-up) {
+      width: 20vw;
+    }
+
+    @include for-size(tablet-landscape-up) {
+      width: 15vw;
+    }
+
+    @include for-size(desktop-up) {
+      width: 10vw;
+    }
+
+    @include for-size(big-desktop-up) {
+      width: 10vw;
+    }
   }
 
   .navLinks {
