@@ -20,18 +20,19 @@ export default class HeroSection extends React.Component {
         <div className="heroContent">
           <h2 className="text-white">
             Support Your Beloved <br /> Creative Media Projects
-        </h2>
-          <p className= "text-white">Invest into what you believe in. Don't be an outsider.</p>
+          </h2>
+          <p className="text-white">
+            Invest into what you believe in. Don't be an outsider.
+          </p>
           <div className="subscribeSection">
             <div className="emailInput">
               <InputBox message="Subscribe for updates" />
             </div>
             <Button color="warning" id="button">
               Subscribe
-          </Button>
+            </Button>
           </div>
         </div>
-
       </header>
     );
   }
