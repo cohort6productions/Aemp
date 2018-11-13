@@ -38,28 +38,67 @@
   text-decoration: underline;
 }
 
-#buttonLogin {
-  @include boxShadow;
-  color: white;
-}
-
-.collapse.navbar-collapse {
-  #linksAndButton {
-    width: 80vw;
-    max-width: 100%;
-    display: flex;
+#linksAndButton {
+  width: 100%;
+  display: flex;
+  @include for-size(phone-only) {
+    flex-direction: column;
+    justify-content: center;
+  }
+  @include for-size(tablet-portrait-up) {
+    flex-direction: column;
+    justify-content: center;
+  }
+  @include for-size(tablet-landscape-up) {
+    flex-direction: column;
+    justify-content: center;
+  }
+  @include for-size(desktop-up) {
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 10px;
+  }
+  @include for-size(big-desktop-up) {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
-.collapse.navbar-collapse.show {
-  display: flex;
-  flex-direction: column;
-  #linksAndButton {
+#buttonLogin {
+  @include boxShadow;
+  color: white;
+  @include for-size(phone-only) {
+    display: none;
+  }
+  @include for-size(tablet-portrait-up) {
+    display: none;
+  }
+  @include for-size(tablet-landscape-up) {
+    display: none;
+  }
+  @include for-size(desktop-up) {
     display: flex;
-    flex-direction: column;
+    justify-content: flex-start;
+  }
+  @include for-size(big-desktop-up) {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+#collapseMenu {
+  @include for-size(phone-only) {
+    display: flex;
+  }
+  @include for-size(tablet-portrait-up) {
+    display: flex;
+  }
+  @include for-size(tablet-landscape-up) {
+    display: flex;
+  }
+  @include for-size(desktop-up) {
+    display: none;
+  }
+  @include for-size(big-desktop-up) {
+    display: none;
   }
 }

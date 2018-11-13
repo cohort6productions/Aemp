@@ -67,6 +67,15 @@ export default class NavBar extends React.Component<{}, INavBarState> {
                   LANGUAGE
                 </NavLink>
               </NavItem>
+              <NavItem>
+                <NavLink
+                  href="/components/"
+                  className="navLinks text-white"
+                  id="collapseMenu"
+                >
+                  LOGIN/REGISTER
+                </NavLink>
+              </NavItem>
             </Nav>
             <Button className="button" id="buttonLogin" color={"warning"}>
               Login/Register
