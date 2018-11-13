@@ -23,18 +23,18 @@ export default class Footer extends React.Component {
             <br />
             <a href="mailto:info@ambrasia.com">info@ambrasia.com</a>
             <br />
-            <Row className="socialIcon">
+            <Row id="socialIcon">
               <Col>
-                <img src={Facebook} />
+                <img src={Facebook} className="icons" />
               </Col>
               <Col>
-                <img src={Twitter} />
+                <img src={Twitter} className="icons" />
               </Col>
               <Col>
-                <img src={Linkedin} />
+                <img src={Linkedin} className="icons" />
               </Col>
               <Col>
-                <img src={Instagram} />
+                <img src={Instagram} className="icons" />
               </Col>
             </Row>
           </Col>
