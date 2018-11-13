@@ -28,7 +28,7 @@ export default class HeroSection extends React.Component {
             <div className="emailInput">
               <InputBox message="Subscribe for updates" />
             </div>
-            <Button color="warning" id="button">
+            <Button className="button" color="warning">
               Subscribe
             </Button>
           </div>

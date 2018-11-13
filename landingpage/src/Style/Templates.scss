@@ -78,3 +78,13 @@ $blue: rgba(25, 118, 210, 1);
   @include for-size(big-desktop-up) {
   }
 }
+
+.navbar{
+  padding: 0;
+}
+
+.button{
+  color: white;
+  padding-left: 1.8vw;
+  padding-right: 1.8vw;
+}

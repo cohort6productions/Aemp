@@ -38,7 +38,7 @@ export default class NavBar extends React.Component<{}, INavBarState> {
         <NavbarBrand href="#">
           <img className="navLogo" src={Logo} alt="Aemp Logo" />
         </NavbarBrand>
-        <NavbarToggler onClick={this.toggle} id="opened"/>
+        <NavbarToggler onClick={this.toggle} id="opened" />
         <Collapse isOpen={this.state.isOpen} navbar={true}>
           <div id="linksAndButton">
             <Nav className="navbar" navbar={true}>
@@ -68,10 +68,7 @@ export default class NavBar extends React.Component<{}, INavBarState> {
                 </NavLink>
               </NavItem>
             </Nav>
-            <Button
-              id="buttonLogin"
-              color={"warning"}
-            >
+            <Button className="button" id="buttonLogin" color={"warning"}>
               Login/Register
             </Button>
           </div>
