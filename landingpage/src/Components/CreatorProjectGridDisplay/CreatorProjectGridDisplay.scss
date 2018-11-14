@@ -240,8 +240,8 @@ $projectTagHeaderHeight: 7vmin;
             }
         }
 
-        #img3,
-        #img4 {
+        #img2,
+        #img3 {
             @include for-size(desktop-up) {
                 grid-row: span 2;
                 grid-column: span 2;

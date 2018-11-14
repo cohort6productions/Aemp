@@ -8,32 +8,56 @@ import "./CreatorProjectBox.scss";
 // Importing UI elements
 
 // Importing interfaces
-import { ICreatorProjectBoxProps } from "src/Interfaces/Interfaces";
-
-// const boxStyle = {
-//   backgroundImage: `url({this.props.image})`,
-//   height: "100%",
-//   width: "100%"
-// };
+import {
+  ICreatorProjectBoxProps,
+  ICreatorProjectBoxState
+} from "src/Interfaces/Interfaces";
 
 export default class ICreatorProjectBox extends React.Component<
   ICreatorProjectBoxProps,
-  {}
+  ICreatorProjectBoxState
 > {
   constructor(props: ICreatorProjectBoxProps) {
     super(props);
+
+    this.state = {
+      isHover: false
+    };
+
+    this.closeHover = this.closeHover.bind(this);
+    this.openHover = this.openHover.bind(this);
   }
+
+  public openHover = () => {
+    this.setState({ isHover: true });
+  };
+
+  public closeHover = () => {
+    this.setState({ isHover: false });
+  };
 
   public render() {
     return (
       <div
-        className={this.props.highlight ? "lgGridBox" : "smGridBox"}
-       
+        className="gridBox"
+        id={this.props.id}
+        onMouseEnter={this.openHover}
+        onMouseLeave={this.closeHover}
       >
-        <img className="boxImage" src={this.props.image} alt="" />
-        {/* <div className="nameTag rounded">
-          <span className="nameTxt text-white rounded">{this.props.name}</span>
-        </div> */}
+        {this.state.isHover && (
+          <div className="gridContent">
+            <h3>{this.props.dataSet.name}</h3>
+            <p>{this.props.dataSet.description}</p>
+          </div>
+        )}
+        <img
+          src={this.props.dataSet.image}
+          alt={this.props.dataSet.name}
+          className="boxImage"
+        />
+        <div className="cornerTag">
+          <span className="tagText">{this.props.dataSet.name}</span>
+        </div>
       </div>
     );
   }

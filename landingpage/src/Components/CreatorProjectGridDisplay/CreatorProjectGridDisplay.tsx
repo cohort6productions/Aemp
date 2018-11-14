@@ -6,23 +6,33 @@ import "./CreatorProjectGridDisplay.scss";
 import playButton from "./Icons/play-button.svg";
 import videoButton from "./Icons/video-player.svg";
 
-import Cowsep from "./Images/cowsep.jpg";
-import Eunkyung from "./Images/cute.jpg";
-import Evos from "./Images/evos.png";
-import Soyoung from "./Images/iu.png";
-import Jihye from "./Images/khs.jpg";
-import Bohye from "./Images/snsd.jpg";
+import Cowsep from "./Images/Creators/cowsep.jpg";
+import Eunkyung from "./Images/Creators/cute.jpg";
+import Evos from "./Images/Creators/evos.png";
+import Soyoung from "./Images/Creators/iu.png";
+import Jihye from "./Images/Creators/khs.jpg";
+import Bohye from "./Images/Creators/snsd.jpg";
+
+// import fb from "./Images/Projects/fantastic beast.jpg";
+// import iuconcert from "./Images/Projects/iuconcert.jpg";
+// import league from "./Images/Projects/league.jpg";
+// import lotr from "./Images/Projects/lotr.jpg";
+// import rockman from "./Images/Projects/rockman.jpg";
+// import rockman1 from "./Images/Projects/rockman1.jpg";
 
 // Importing reduc and friends
 // Importing react routering
 
 // Importing UI elements
-// import ICreatorProjectBox from "./CreatorProjectBox/CreatorProjectBox";
+import ICreatorProjectBox from "./CreatorProjectBox/CreatorProjectBox";
 
 // Importing interfaces
-import { ICreatorProjectBoxProps } from "src/Interfaces/Interfaces";
+import {
+  ICreatorProjectDisplayState,
+  ICreatorProjectSet
+} from "src/Interfaces/Interfaces";
 
-const tempCreators: ICreatorProjectBoxProps[] = [
+const creatorsList: ICreatorProjectSet[] = [
   {
     description: "TBA",
     highlight: false,
@@ -61,24 +71,55 @@ const tempCreators: ICreatorProjectBoxProps[] = [
   }
 ];
 
-export default class CreatorProjectGridDisplay extends React.Component<{}, { imageOne: boolean }> {
+// const projectsList: ICreatorProjectSet[] = [
+//   {
+//     description: "Good show",
+//     highlight: false,
+//     image: fb,
+//     name: "Fantastic Beast"
+//   },
+//   {
+//     description: "TBA",
+//     highlight: false,
+//     image: iuconcert,
+//     name: "IU concert"
+//   },
+//   {
+//     description: "TBA",
+//     highlight: true,
+//     image: league,
+//     name: "League Worlds Championship"
+//   },
+//   {
+//     description: "TBA",
+//     highlight: true,
+//     image: lotr,
+//     name: "Lord of the rings"
+//   },
+//   {
+//     description: "TBA",
+//     highlight: false,
+//     image: rockman,
+//     name: "Super Rock"
+//   },
+//   {
+//     description: "TBA",
+//     highlight: false,
+//     image: rockman1,
+//     name: "Rockman Retro"
+//   }
+// ];
+
+export default class CreatorProjectGridDisplay extends React.Component<
+  {},
+  ICreatorProjectDisplayState
+> {
   constructor(props: { imageOne: boolean }) {
     super(props);
 
     this.state = {
-      imageOne: false
-    }
-
-    this.closeHover = this.closeHover.bind(this);
-    this.openHover = this.openHover.bind(this);
-  }
-
-  public openHover = () => {
-    this.setState({ imageOne: true })
-  }
-
-  public closeHover = () => {
-    this.setState({ imageOne: false })
+      currentDataSet: creatorsList
+    };
   }
 
   public render() {
@@ -96,60 +137,12 @@ export default class CreatorProjectGridDisplay extends React.Component<{}, { ima
           </a>
         </div>
         <div className="creatorProjectContainer">
-          <div className="gridBox" id="img1" onMouseEnter={this.openHover}
-            onMouseLeave={this.closeHover}>
-            {(this.state.imageOne) && <div className="gridContent">
-              <h3>{tempCreators[0].name}</h3>
-              <p>{tempCreators[0].description}</p>
-            </div>
-            }
-            <img src={tempCreators[0].image} alt="" className="boxImage" />
-            <div className="cornerTag">
-              <span className="tagText">
-                {tempCreators[0].name}
-              </span>
-            </div>
-          </div>
-          <div className="gridBox" id="img2">
-            <img src={tempCreators[1].image} alt="" className="boxImage" />
-            <div className="cornerTag">
-              <span className="tagText">
-                {tempCreators[1].name}
-              </span>
-            </div>
-          </div>
-          <div className="gridBox" id="img3">
-            <img src={tempCreators[2].image} alt="" className="boxImage" />
-            <div className="cornerTag">
-              <span className="tagText">
-                {tempCreators[2].name}
-              </span>
-            </div>
-          </div>
-          <div className="gridBox" id="img4">
-            <img src={tempCreators[3].image} alt="" className="boxImage" />
-            <div className="cornerTag">
-              <span className="tagText">
-                {tempCreators[3].name}
-              </span>
-            </div>
-          </div>
-          <div className="gridBox" id="img5">
-            <img src={tempCreators[4].image} alt="" className="boxImage" />
-            <div className="cornerTag">
-              <span className="tagText">
-                {tempCreators[4].name}
-              </span>
-            </div>
-          </div>
-          <div className="gridBox" id="img6">
-            <img src={tempCreators[5].image} alt="" className="boxImage" />
-            <div className="cornerTag">
-              <span className="tagText">
-                {tempCreators[5].name}
-              </span>
-            </div>
-          </div>
+          {this.state.currentDataSet.map((unit, key) => {
+            return (
+              <ICreatorProjectBox dataSet={unit} id={`img${key}`} key={key} />
+            );
+          })}
+
         </div>
       </div>
     );

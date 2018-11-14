@@ -33,14 +33,27 @@ export interface INavBarState {
 }
 
 // CreatorProjectBox
-export interface ICreatorProjectBoxProps {
+export interface ICreatorProjectSet {
   name: string;
   description: string;
   image: any;
   highlight: boolean;
 }
 
+export interface ICreatorProjectBoxProps {
+  dataSet: ICreatorProjectSet;
+  id: string;
+}
+
+export interface ICreatorProjectBoxState {
+  isHover: boolean;
+}
+
 // CreatorProjectGridDisplay
 export interface ICreatorProjectDisplayProps {
   list: ICreatorProjectBoxProps[];
+}
+
+export interface ICreatorProjectDisplayState {
+  currentDataSet: ICreatorProjectSet[];
 }
