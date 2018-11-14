@@ -13,12 +13,12 @@ import Soyoung from "./Images/Creators/iu.png";
 import Jihye from "./Images/Creators/khs.jpg";
 import Bohye from "./Images/Creators/snsd.jpg";
 
-// import fb from "./Images/Projects/fantastic beast.jpg";
-// import iuconcert from "./Images/Projects/iuconcert.jpg";
-// import league from "./Images/Projects/league.jpg";
-// import lotr from "./Images/Projects/lotr.jpg";
-// import rockman from "./Images/Projects/rockman.jpg";
-// import rockman1 from "./Images/Projects/rockman1.jpg";
+import fb from "./Images/Projects/fantastic beast.jpg";
+import iuconcert from "./Images/Projects/iuconcert.jpg";
+import league from "./Images/Projects/league.jpg";
+import lotr from "./Images/Projects/lotr.jpg";
+import rockman from "./Images/Projects/rockman.jpg";
+import rockman1 from "./Images/Projects/rockman1.jpg";
 
 // Importing reduc and friends
 // Importing react routering
@@ -71,44 +71,44 @@ const creatorsList: ICreatorProjectSet[] = [
   }
 ];
 
-// const projectsList: ICreatorProjectSet[] = [
-//   {
-//     description: "Good show",
-//     highlight: false,
-//     image: fb,
-//     name: "Fantastic Beast"
-//   },
-//   {
-//     description: "TBA",
-//     highlight: false,
-//     image: iuconcert,
-//     name: "IU concert"
-//   },
-//   {
-//     description: "TBA",
-//     highlight: true,
-//     image: league,
-//     name: "League Worlds Championship"
-//   },
-//   {
-//     description: "TBA",
-//     highlight: true,
-//     image: lotr,
-//     name: "Lord of the rings"
-//   },
-//   {
-//     description: "TBA",
-//     highlight: false,
-//     image: rockman,
-//     name: "Super Rock"
-//   },
-//   {
-//     description: "TBA",
-//     highlight: false,
-//     image: rockman1,
-//     name: "Rockman Retro"
-//   }
-// ];
+const projectsList: ICreatorProjectSet[] = [
+  {
+    description: "Good show",
+    highlight: false,
+    image: fb,
+    name: "Fantastic Beast"
+  },
+  {
+    description: "TBA",
+    highlight: false,
+    image: iuconcert,
+    name: "IU concert"
+  },
+  {
+    description: "TBA",
+    highlight: true,
+    image: league,
+    name: "League Worlds Championship"
+  },
+  {
+    description: "TBA",
+    highlight: true,
+    image: lotr,
+    name: "Lord of the rings"
+  },
+  {
+    description: "TBA",
+    highlight: false,
+    image: rockman,
+    name: "Super Rock"
+  },
+  {
+    description: "TBA",
+    highlight: false,
+    image: rockman1,
+    name: "Rockman Retro"
+  }
+];
 
 export default class CreatorProjectGridDisplay extends React.Component<
   {},
@@ -122,16 +122,28 @@ export default class CreatorProjectGridDisplay extends React.Component<
     };
   }
 
+  public setCreatorsList = () => {
+    this.setState({
+      currentDataSet: creatorsList
+    })
+  }
+
+  public setProjectsList = () => {
+    this.setState({
+      currentDataSet: projectsList
+    })
+  }
+
   public render() {
     return (
       <div className="projectSection">
         <div className="tagContainer">
-          <a href={"./"} className="singleTag">
+          <a className="singleTag" onClick={this.setCreatorsList}>
             <img src={playButton} alt="" className="tagIcon" />
             <h3 className="tagText text-white">Creators </h3>
           </a>
           <div className="hwDivider" />
-          <a href="./" className="singleTag">
+          <a className="singleTag" onClick={this.setProjectsList}>
             <img src={videoButton} alt="" className="tagIcon" />
             <h3 className="tagText text-white">Projects</h3>
           </a>
@@ -142,7 +154,6 @@ export default class CreatorProjectGridDisplay extends React.Component<
               <ICreatorProjectBox dataSet={unit} id={`img${key}`} key={key} />
             );
           })}
-
         </div>
       </div>
     );
