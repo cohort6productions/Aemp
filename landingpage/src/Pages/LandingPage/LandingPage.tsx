@@ -6,7 +6,7 @@ import * as React from "react";
 
 // Importing UI elements
 import CreatorProjectGridDisplay from "src/Components/CreatorProjectGridDisplay/CreatorProjectGridDisplay";
-import Footer from "src/Components/Footer/Footer";
+import Footer from "src/Components/FooterNew/FooterNew";
 import FooterSection from "src/Components/FooterSection/FooterSection";
 import HeroSection from "src/Components/HeroSection/HeroSection";
 import HowToSection from "src/Components/HowToSection/HowToSection";

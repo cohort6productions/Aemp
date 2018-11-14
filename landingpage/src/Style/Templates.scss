@@ -18,15 +18,19 @@ $blue: rgba(25, 118, 210, 1);
 }
 
 @mixin text-white {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 @mixin text-orange {
-  color: #ffa800;
+  color: rgb(255, 168, 0);
 }
 
 @mixin text-blue {
-  color: #1976d2;
+  color: rgb(25, 118, 210);
+}
+
+text-liteBlue {
+  color: rgb(98, 132, 204);
 }
 
 @mixin boxShadow {
@@ -43,19 +47,27 @@ $blue: rgba(25, 118, 210, 1);
     @media (max-width: #{$phone-upper-boundary - 1}) {
       @content;
     }
-  } @else if $range==tablet-portrait-up {
+  }
+
+  @else if $range==tablet-portrait-up {
     @media (min-width: $phone-upper-boundary) {
       @content;
     }
-  } @else if $range==tablet-landscape-up {
+  }
+
+  @else if $range==tablet-landscape-up {
     @media (min-width: $tablet-portrait-upper-boundary) {
       @content;
     }
-  } @else if $range==desktop-up {
+  }
+
+  @else if $range==desktop-up {
     @media (min-width: $tablet-landscape-upper-boundary) {
       @content;
     }
-  } @else if $range==big-desktop-up {
+  }
+
+  @else if $range==big-desktop-up {
     @media (min-width: $desktop-upper-boundary) {
       @content;
     }
@@ -63,28 +75,29 @@ $blue: rgba(25, 118, 210, 1);
 }
 
 #id {
-  @include for-size(phone-only) {
-  }
+  @include for-size(phone-only) {}
 
-  @include for-size(tablet-portrait-up) {
-  }
+  @include for-size(tablet-portrait-up) {}
 
-  @include for-size(tablet-landscape-up) {
-  }
+  @include for-size(tablet-landscape-up) {}
 
-  @include for-size(desktop-up) {
-  }
+  @include for-size(desktop-up) {}
 
-  @include for-size(big-desktop-up) {
-  }
+  @include for-size(big-desktop-up) {}
 }
 
-.navbar{
+.navbar {
   padding: 0;
 }
 
-.button{
+.button {
   color: white;
   padding-left: 1.8vw;
   padding-right: 1.8vw;
+}
+
+.hwFlexStart {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
