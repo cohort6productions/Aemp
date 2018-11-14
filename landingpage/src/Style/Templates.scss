@@ -29,7 +29,23 @@ $blue: rgba(25, 118, 210, 1);
   color: rgb(25, 118, 210);
 }
 
-text-liteBlue {
+@mixin text-liteBlue {
+  color: rgb(98, 132, 204);
+}
+
+.text-white {
+  color: rgb(255, 255, 255);
+}
+
+.text-orange {
+  color: rgb(255, 168, 0);
+}
+
+.text-blue {
+  color: rgb(25, 118, 210);
+}
+
+.text-liteBlue {
   color: rgb(98, 132, 204);
 }
 
@@ -96,8 +112,18 @@ text-liteBlue {
   padding-right: 1.8vw;
 }
 
-.hwFlexStart {
+.colFlexStart {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
+
+.rowFlexSpcBtw {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.halfWidth {
+  width: 50%;
 }

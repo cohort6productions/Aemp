@@ -16,12 +16,17 @@ import Linkedin from "./Images/linkedin.svg";
 import Logo from "./Images/logo-hwz-org@0.5x.png";
 import Twitter from "./Images/twitter.svg";
 
+import Jumbotron from "reactstrap/lib/Jumbotron";
+
 // Importing interfaces
 
 export default class Footer extends React.Component {
   public render() {
     return (
-      <div className="fullWidthFooter">
+      <Jumbotron
+        className="bg-transparent
+      "
+      >
         <div id="siteMapGrid">
           <img className="siteMapHeader" src={Logo} alt="" id="logo" />
           <h4 className="siteMapHeader" id="search">
@@ -31,22 +36,32 @@ export default class Footer extends React.Component {
             Policies
           </h4>
           <h4 className="siteMapHeader" id="sub">
-            Subscribe
+            Subscribe and Follow
           </h4>
-          <div className="hwFlexStart" id="logoCont">
+          <div className="colFlexStart" id="logoCont">
             <a href="mailto:info@ambrasia.com">info@ambrasia.com</a>
           </div>
-          <div className="hwFlexStart" id="searchCont">
-            <a href="#">Creators</a>
-            <a href="#">Projects</a>
+          <div className="colFlexStart" id="searchCont">
+            <a className="footerLink" href="#">
+              Creators
+            </a>
+            <a className="footerLink" href="#">
+              Projects
+            </a>
           </div>
-          <div className="hwFlexStart" id="policiesCont">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms and Conditions</a>
-            <a href="#">Cookie Policy</a>
+          <div className="colFlexStart" id="policiesCont">
+            <a className="footerLink" href="#">
+              Privacy Policy
+            </a>
+            <a className="footerLink" href="#">
+              Terms and Conditions
+            </a>
+            <a className="footerLink" href="#">
+              Cookie Policy
+            </a>
           </div>
-          <div className="hwFlexStart" id="followUsCont">
-            <div>
+          <div className="colFlexStart" id="followUsCont">
+            <div className="rowFlexSpcBtw halfWidth" id="footerSocial">
               <a href="#" className="social">
                 <img src={Facebook} alt="Aemp Facebook" className="icons" />
               </a>
@@ -60,16 +75,15 @@ export default class Footer extends React.Component {
                 <img src={Instagram} alt="Aemp Instagram" className="icons" />
               </a>
             </div>
-            <div>
-              <InputGroup>
-                <Input placeholder="Be the first to know" />
-                <InputGroupAddon addonType="append">
-                  <Button color="secondary" id="buttonArrow">
-                    Subscribe
-                  </Button>
-                </InputGroupAddon>
-              </InputGroup>
-            </div>
+
+            <InputGroup>
+              <Input placeholder="Be the first to know" />
+              <InputGroupAddon addonType="append">
+                <Button className="button" color="secondary" id="buttonArrow">
+                  Subscribe
+                </Button>
+              </InputGroupAddon>
+            </InputGroup>
           </div>
           <div className="subCont" />
         </div>
@@ -77,13 +91,23 @@ export default class Footer extends React.Component {
         <div id="divisionLine" />
         <Row id="disclaimer">
           <Col sm="12" md="6" id="leftDisclaimer">
-            <p>Made with &#10084; by Cohort 6 Productions</p>
+            <p className="text-liteBlue">
+              Made with &#10084; by{" "}
+              <a
+                className="text-liteBlue"
+                href="https://www.cohort6productions.com"
+              >
+                Cohort 6 Productions
+              </a>
+            </p>
           </Col>
           <Col sm="12" md="6" id="rightDisclaimer">
-            <p>@2018 Ambrasia Multimedia Limited All rights reserved</p>
+            <p className="text-liteBlue">
+              @2018 Ambrasia Multimedia Limited All rights reserved
+            </p>
           </Col>
         </Row>
-      </div>
+      </Jumbotron>
     );
   }
 }
