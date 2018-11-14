@@ -1,21 +1,24 @@
 // Importing modules
 import * as React from "react";
 
+
 // Importing styling and static assets
 import "./App.scss";
 
 // Importing reduc and friends
 // Importing react routering
-// Importing UI elements
-import LandingPage from "./Pages/LandingPage/LandingPage";
-// Importing interfaces
 
+// Importing UI elements
+// Importing interfaces
+import Website from "src/Routes/website";
 // import logo from './logo.svg';
 
-class App extends React.Component {
+export default class App extends React.Component {
   public render() {
-    return <LandingPage />;
+    return (
+      <div>
+        <Website />
+      </div>
+    );
   }
 }
-
-export default App;

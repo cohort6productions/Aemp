@@ -1,5 +1,8 @@
+import * as History from "history";
 import * as React from "react";
 import "./FooterNew.scss";
+
+import { withRouter } from "react-router";
 
 import {
   Button,
@@ -19,8 +22,31 @@ import Twitter from "./Images/twitter.svg";
 import Jumbotron from "reactstrap/lib/Jumbotron";
 
 // Importing interfaces
+interface IFooterProps {
+  history: History.History;
+}
 
-export default class Footer extends React.Component {
+class Footer extends React.Component<IFooterProps> {
+  constructor(props: IFooterProps) {
+    super(props);
+  }
+
+  public toPrivacy = () => {
+    this.props.history.push("/policy/privacy_policy");
+  };
+  public toTerms = () => {
+    this.props.history.push("policy/terms_and_conditions");
+  };
+  public toCookie = () => {
+    this.props.history.push("policy/cookie_policy");
+  };
+  public toProjects = () => {
+    this.props.history.push("policy/privacy_policy");
+  };
+  public toCreators = () => {
+    this.props.history.push("policy/privacy_policy");
+  };
+
   public render() {
     return (
       <Jumbotron
@@ -42,21 +68,21 @@ export default class Footer extends React.Component {
             <a href="mailto:info@ambrasia.com">info@ambrasia.com</a>
           </div>
           <div className="colFlexStart" id="searchCont">
-            <a className="footerLink" href="#">
+            <a className="footerLink" onClick={this.toCreators}>
               Creators
             </a>
-            <a className="footerLink" href="#">
+            <a className="footerLink" onClick={this.toProjects}>
               Projects
             </a>
           </div>
           <div className="colFlexStart" id="policiesCont">
-            <a className="footerLink" href="#">
+            <a className="footerLink" onClick={this.toPrivacy}>
               Privacy Policy
             </a>
-            <a className="footerLink" href="#">
+            <a className="footerLink" onClick={this.toTerms}>
               Terms and Conditions
             </a>
-            <a className="footerLink" href="#">
+            <a className="footerLink" onClick={this.toCookie}>
               Cookie Policy
             </a>
           </div>
@@ -111,3 +137,5 @@ export default class Footer extends React.Component {
     );
   }
 }
+
+export default withRouter(Footer as any);
