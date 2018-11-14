@@ -35,16 +35,16 @@ class Footer extends React.Component<IFooterProps> {
     this.props.history.push("/policy/privacy_policy");
   };
   public toTerms = () => {
-    this.props.history.push("policy/terms_and_conditions");
+    this.props.history.push("/policy/terms_and_conditions");
   };
   public toCookie = () => {
-    this.props.history.push("policy/cookie_policy");
+    this.props.history.push("/policy/cookie_policy");
   };
   public toProjects = () => {
-    this.props.history.push("policy/privacy_policy");
+    this.props.history.push("/policy/privacy_policy");
   };
   public toCreators = () => {
-    this.props.history.push("policy/privacy_policy");
+    this.props.history.push("/policy/privacy_policy");
   };
 
   public render() {
