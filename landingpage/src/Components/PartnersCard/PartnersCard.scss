@@ -21,7 +21,26 @@
       text-align: center;
 
       .logoImg {
-        width: 175px;
+        @include for-size(phone-only) {
+          width: 50%;
+        }
+
+        @include for-size(tablet-portrait-up) {
+          width: 60%;
+        }
+
+        @include for-size(tablet-landscape-up) {
+          width: 70%;
+        }
+
+        @include for-size(desktop-up) {
+          width: 100%;
+        }
+
+        @include for-size(big-desktop-up) {
+          width: 100%;
+        }
+
       }
     }
   }

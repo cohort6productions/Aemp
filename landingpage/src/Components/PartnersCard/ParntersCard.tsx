@@ -26,9 +26,9 @@ export default class PartnersCard extends React.Component {
   public render() {
     return (
       <div className="fullWidth">
-        <div id="floatingCard">
+        <div className="rounded" id="floatingCard">
           <SectionHeader {...headerContent} />
-          <Container className="float-center">
+          <Container className="float-center rounded">
             <Row>
               <Col sm="12" md="6" lg="3" className="column">
                 <img className="logoImg" src={vtv} alt="" />
