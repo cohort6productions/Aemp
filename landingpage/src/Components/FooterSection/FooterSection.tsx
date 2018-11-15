@@ -16,8 +16,10 @@ export default class FooterSection extends React.Component {
     return (
       <Row id="footerTop">
         <Col xs="12" sm="12" md="12" lg="6">
-          <h2 id="subscribeHeader">Share our vision</h2>
-          <p className = "nullMargin">
+          <h2 className="text-white" id="subscribeHeader">
+            Share our vision
+          </h2>
+          <p className="text-white nullMargin">
             We are ambitious about our vision, <br />
             but we need talented people like you to grow.
           </p>

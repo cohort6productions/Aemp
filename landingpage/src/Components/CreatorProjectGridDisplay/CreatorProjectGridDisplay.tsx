@@ -85,13 +85,13 @@ const projectsList: ICreatorProjectSet[] = [
     name: "IU concert"
   },
   {
-    description: "TBA",
+    description: "The legends fight for honor and fame. The legends fight for honor and fame. The legends fight for honor and fame.",
     highlight: true,
     image: league,
     name: "League Worlds Championship"
   },
   {
-    description: "TBA",
+    description: "The future of civilization rests in the fate of the One Ring. The future of civilization rests in the fate of the One Ring. ",
     highlight: true,
     image: lotr,
     name: "Lord of the rings"
