@@ -44,16 +44,23 @@ export default class ICreatorProjectBox extends React.Component<
         onMouseEnter={this.openHover}
         onMouseLeave={this.closeHover}
       >
-        {this.state.isHover && (
+        {this.state.isHover && this.props.dataSet.highlight && (
           <div className="gridContent">
-            <h3>{this.props.dataSet.name}</h3>
-            <p>{this.props.dataSet.description}</p>
+            <h3 className="boxHead nullMargin text-white">
+              {this.props.dataSet.name}
+            </h3>
+            <p className="boxCont nullMargin text-white">
+              {this.props.dataSet.description}
+            </p>
+            <a href="">
+              <span className="boxLink text-white">Learn More</span>
+            </a>
           </div>
         )}
         <img
           src={this.props.dataSet.image}
           alt={this.props.dataSet.name}
-          className="boxImage"
+          className="boxImage rounded"
         />
         <div className="cornerTag">
           <span className="tagText">{this.props.dataSet.name}</span>

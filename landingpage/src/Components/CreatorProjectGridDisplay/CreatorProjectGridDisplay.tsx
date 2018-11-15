@@ -46,13 +46,13 @@ const creatorsList: ICreatorProjectSet[] = [
     name: "Eunkyung Shin"
   },
   {
-    description: "TBA",
+    description: "She is as beautiful as the light of dawn, dazzling the eye of the commons.",
     highlight: true,
     image: Jihye,
     name: "Jihye Choi"
   },
   {
-    description: "TBA",
+    description: "Bohye Kim is the best of the best. Her charms are endless.",
     highlight: true,
     image: Bohye,
     name: "Bohye Kim"
