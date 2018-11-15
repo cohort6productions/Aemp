@@ -50,8 +50,8 @@ class Footer extends React.Component<IFooterProps> {
   public render() {
     return (
       <Jumbotron
-        className="bg-transparent
-      "
+        className="bg-transparent"
+        id="footerJumbo"
       >
         <div id="siteMapGrid">
           <img className="siteMapHeader" src={Logo} alt="" id="logo" />

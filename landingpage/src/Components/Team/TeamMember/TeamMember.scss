@@ -70,6 +70,7 @@ $big-desktop-width: 20vw;
         .memberName {
             font-weight: 600;
             font-family: "Droid Serif";
+            letter-spacing: -.1rem;
 
             @include for-size(phone-only) {
                 font-size: 150%;
@@ -95,6 +96,7 @@ $big-desktop-width: 20vw;
 
         .memberTitle {
             font-style: italic;
+            
 
             @include for-size(phone-only) {
                 font-size: 85%;
