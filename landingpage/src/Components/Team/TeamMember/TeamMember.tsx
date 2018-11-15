@@ -17,29 +17,10 @@ export default class TeamMember extends React.Component<ITeamProps, {}> {
   }
   public render() {
     return (
-      // <Card className="memberCard">
-      //   <CardImg className="memberImage" src={this.props.pictureLink} />
-      //   <CardTitle>{this.props.name}</CardTitle>
-      //   <CardSubtitle>{this.props.title}</CardSubtitle>
-
-      //   <div className="socialRow">
-      //     {this.props.facebookLink && <a href={this.props.facebookLink}>
-      //       <img className="teamSocialIcon" src={facebook} />
-      //     </a>}
-      //     {this.props.twitterLink && <a href={this.props.twitterLink}>
-      //       <img className="teamSocialIcon" src={twitter} />
-      //     </a>}
-      //     {this.props.linkedinLink && <a href={this.props.linkedinLink}>
-      //       <img className="teamSocialIcon" src={linkedin} />
-      //     </a>}
-      //     {this.props.instagramLink && <a href={this.props.instagramLink}>
-      //       <img className="teamSocialIcon" src={instagram} />
-      //     </a>}
-      //   </div>
-      // </Card>
-
       <div className="memberCard">
-        <img className="memberImage" src={this.props.pictureLink} />
+        <div className="imgCont">
+          <img className="memberImage" src={this.props.pictureLink} />
+        </div>
         <div className="memberContent">
           <h4 className="memberName">{this.props.name}</h4>
           <p className="memberTitle">{this.props.title}</p>

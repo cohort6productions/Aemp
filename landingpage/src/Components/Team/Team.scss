@@ -3,17 +3,20 @@
 .teamHorizontalSection {
   width: 100%;
   height: auto;
-  padding: 5% 25.5%;
+  padding: 5%;
   // margin: 10% 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 
   .memberGrid {
     display: grid;
     justify-content: space-evenly;
+    justify-items: center;
     align-items: center;
-    width: 100%;
+    width: 70%;
+    // margin: 0 7%;
     height: auto;
 
     @include for-size(phone-only) {
@@ -45,6 +48,3 @@
     }
   }
 }
-
-
-

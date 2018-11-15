@@ -64,10 +64,10 @@ class Footer extends React.Component<IFooterProps> {
           <h4 className="siteMapHeader" id="sub">
             Subscribe and Follow
           </h4>
-          <div className="colFlexStart" id="logoCont">
+          <div className="colFlexStart botMg5vh" id="logoCont">
             <a href="mailto:info@ambrasia.com">info@ambrasia.com</a>
           </div>
-          <div className="colFlexStart" id="searchCont">
+          <div className="colFlexStart botMg5vh" id="searchCont">
             <a className="footerLink" onClick={this.toCreators}>
               Creators
             </a>
@@ -75,7 +75,7 @@ class Footer extends React.Component<IFooterProps> {
               Projects
             </a>
           </div>
-          <div className="colFlexStart" id="policiesCont">
+          <div className="colFlexStart botMg5vh" id="policiesCont">
             <a className="footerLink" onClick={this.toPrivacy}>
               Privacy Policy
             </a>

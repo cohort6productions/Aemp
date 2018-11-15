@@ -4,10 +4,10 @@ import "./Team.scss";
 
 import { ITeamProps } from "src/Interfaces/Interfaces";
 
-import jason from "./Images/jason.jpg";
-import minsoo from "./Images/minsoo.jpg";
-import reid from "./Images/reid.jpg";
-import steve from "./Images/steve.jpg";
+import jason from "./Images/a.jpg";
+import minsoo from "./Images/b.jpg";
+import reid from "./Images/c.jpg";
+import steve from "./Images/d.jpg";
 import TeamMember from "./TeamMember/TeamMember";
 
 // Declaring variables

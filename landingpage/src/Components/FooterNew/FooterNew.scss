@@ -5,7 +5,9 @@
   width: 100%;
   height: auto;
 
-
+  .botMg5vh{
+    margin-bottom: 1rem;
+  }
 
   .siteMapHeader {
     @include text-orange;
@@ -78,6 +80,8 @@
 
 
 }
+
+
 
 #divisionLine {
   display: block;
