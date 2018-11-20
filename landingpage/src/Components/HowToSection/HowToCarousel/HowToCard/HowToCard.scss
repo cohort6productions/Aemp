@@ -1,29 +1,74 @@
-h1 {
-  font-size: 42px;
+@import "src/Style/Templates";
+
+h3 {
+  font-weight: bold;
+  @include for-size(phone-only) {
+    font-size: 20px;
+  }
 }
 
-h2 {
-  font-size: 24px;
+h4 {
+  @include for-size(phone-only) {
+    font-size: 16px;
+  }
 }
 
 p {
-  font-size: 16px;
+  @include for-size(phone-only) {
+    font-size: 14px;
+  }
 }
 
 .howToContent {
-  padding: 50px;
+  padding: 50px 50px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 300px;
+  @include for-size(phone-only) {
+    height: 350px;
+  }
+
+  @include for-size(tablet-portrait-up) {
+    height: 350px;
+  }
+
+  @include for-size(tablet-landscape-up) {
+    height: 350px;
+  }
+
+  @include for-size(desktop-up) {
+    height: 500px;
+  }
+
+  @include for-size(big-desktop-up) {
+    height: 500px;
+  }
 }
 
 .howToImage {
-  padding: 50px;
+  padding: 10px 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 600px;
+  @include for-size(phone-only) {
+    height: 200px;
+  }
+
+  @include for-size(tablet-portrait-up) {
+    height: 350px;
+  }
+
+  @include for-size(tablet-landscape-up) {
+    height: 400px;
+  }
+
+  @include for-size(desktop-up) {
+    height: 500px;
+  }
+
+  @include for-size(big-desktop-up) {
+    height: 500px;
+  }
 }
 
 .howToCard {

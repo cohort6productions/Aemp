@@ -15,8 +15,8 @@ export default class HowToCard extends React.Component<IHowToCardProps> {
       <div className="howToCard">
         <Row style={{ alignItems: "center" }}>
           <Col md="12" lg="6" className="howToContent">
-            <h1>{this.props.heading}</h1>
-            <h2>{this.props.subHeading}</h2>
+            <h3>{this.props.heading}</h3>
+            <h4>{this.props.subHeading}</h4>
             <p>{this.props.content}</p>
           </Col>
           <Col md="12" lg="6" className="howToImage">

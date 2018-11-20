@@ -1,12 +1,12 @@
 import * as React from "react";
 import "./CookieConsent.scss";
 
-import CookieBanner, { Cookies } from "react-cookie-banner";
+import CookieBanner from "react-cookie-banner";
 
 export default class CookieConsent extends React.Component <{},{accept:boolean}>{
 constructor(props:{}){
     super(props);
-    Cookies.remove("accepts-cookies");
+    // Cookies.remove("accepts-cookies");
 }
     // function resetCookies() {
     //     cookies.remove('accepts-cookies')

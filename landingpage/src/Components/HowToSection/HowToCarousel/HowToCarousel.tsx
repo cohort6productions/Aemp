@@ -5,10 +5,10 @@ import "./HowToCarousel.scss";
 
 import HowToCard from "./HowToCard/HowToCard";
 
-import Backer from "./img/backer.svg";
-import Creator from "./img/creator.svg";
-import Launch from "./img/launch.svg";
-import Platform from "./img/platform.svg";
+import Backer from "./img/backer.png";
+import Creator from "./img/creator.png";
+import Launch from "./img/launch.png";
+import Platform from "./img/platform.png";
 
 export default class HowToCarousel extends React.Component {
   public render() {
