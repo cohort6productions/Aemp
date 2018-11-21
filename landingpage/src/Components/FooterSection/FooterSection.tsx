@@ -28,7 +28,7 @@ export default class FooterSection extends React.Component {
           <InputGroup>
             <Input placeholder="Come join our team" />
             <InputGroupAddon addonType="append">
-              <Button color="warning button" id="button">
+              <Button color="warning" className="button" id="button">
                 Join Us
               </Button>
             </InputGroupAddon>

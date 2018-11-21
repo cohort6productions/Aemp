@@ -14,6 +14,7 @@ $big-desktop-width: 20vw;
     flex-direction: column;
     align-items: center;
     border-radius: 5px;
+    
 
 
 
@@ -67,6 +68,7 @@ $big-desktop-width: 20vw;
         justify-content: center;
         align-items: center;
 
+
         .memberName {
             font-weight: 600;
             font-family: "Droid Serif";
@@ -96,7 +98,7 @@ $big-desktop-width: 20vw;
 
         .memberTitle {
             font-style: italic;
-            
+
 
             @include for-size(phone-only) {
                 font-size: 85%;

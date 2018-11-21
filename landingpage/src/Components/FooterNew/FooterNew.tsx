@@ -49,10 +49,7 @@ class Footer extends React.Component<IFooterProps> {
 
   public render() {
     return (
-      <Jumbotron
-        className="bg-transparent"
-        id="footerJumbo"
-      >
+      <Jumbotron className="bg-transparent" id="footerJumbo">
         <div id="siteMapGrid">
           <img className="siteMapHeader" src={Logo} alt="" id="logo" />
           <h4 className="siteMapHeader" id="search">
@@ -65,25 +62,27 @@ class Footer extends React.Component<IFooterProps> {
             Subscribe and Follow
           </h4>
           <div className="colFlexStart botMg5vh" id="logoCont">
-            <a href="mailto:info@ambrasia.com">info@ambrasia.com</a>
+            <a href="mailto:info@ambrasia.com">
+              <span className="text-liteBlue">info@ambrasia.com</span>
+            </a>
           </div>
           <div className="colFlexStart botMg5vh" id="searchCont">
             <a className="footerLink" onClick={this.toCreators}>
-              Creators
+              <span className="text-liteBlue">Creators</span>
             </a>
             <a className="footerLink" onClick={this.toProjects}>
-              Projects
+              <span className="text-liteBlue">Projects</span>
             </a>
           </div>
           <div className="colFlexStart botMg5vh" id="policiesCont">
             <a className="footerLink" onClick={this.toPrivacy}>
-              Privacy Policy
+              <span className="text-liteBlue">Privacy Policy</span>
             </a>
             <a className="footerLink" onClick={this.toTerms}>
-              Terms and Conditions
+              <span className="text-liteBlue">Terms and Conditions</span>
             </a>
             <a className="footerLink" onClick={this.toCookie}>
-              Cookie Policy
+              <span className="text-liteBlue">Cookie Policy</span>
             </a>
           </div>
           <div className="colFlexStart" id="followUsCont">
@@ -105,7 +104,7 @@ class Footer extends React.Component<IFooterProps> {
             <InputGroup>
               <Input placeholder="Be the first to know" />
               <InputGroupAddon addonType="append">
-                <Button className="button" color="secondary" id="buttonArrow">
+                <Button color="secondary" className="button" id="buttonArrow">
                   Subscribe
                 </Button>
               </InputGroupAddon>

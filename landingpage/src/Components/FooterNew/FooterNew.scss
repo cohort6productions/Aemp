@@ -14,12 +14,13 @@
 
     .siteMapHeader {
       @include text-orange;
+      font-family: 'Droid Serif Bold', "Merriweather", 'Times New Roman', Times, serif;
       align-self: flex-end;
 
     }
 
     .footerLink {
-      @include text-liteBlue;
+      cursor: pointer;
     }
 
     @include for-size(phone-only) {

@@ -1,24 +1,29 @@
+import * as History from "history";
+
+import { withRouter } from "react-router";
+
 import React from "react";
 import {
   Button,
   Collapse,
-  // DropdownItem,
-  // DropdownMenu,
-  // DropdownToggle,
   Nav,
   Navbar,
   NavbarBrand,
   NavbarToggler,
   NavItem,
   NavLink
-  // UncontrolledDropdown
 } from "reactstrap";
 import { INavBarState } from "../../Interfaces/Interfaces";
 import "./NavBar.scss";
 
 import Logo from "./Images/logo-hwz-org.png";
 
-export default class NavBar extends React.Component<{}, INavBarState> {
+// Importing interfaces
+interface IHeaderProps {
+  history: History.History;
+}
+
+class NavBar extends React.Component<IHeaderProps, INavBarState> {
   constructor(props: any) {
     super(props);
 
@@ -32,10 +37,15 @@ export default class NavBar extends React.Component<{}, INavBarState> {
       isOpen: !this.state.isOpen
     });
   }
+
+  public toHome = () => {
+    this.props.history.push("/");
+  };
+
   public render() {
     return (
       <Navbar className="navCenter" light={true} expand="lg">
-        <NavbarBrand href="#">
+        <NavbarBrand onClick={this.toHome}>
           <img className="navLogo" src={Logo} alt="Aemp Logo" />
         </NavbarBrand>
         <NavbarToggler onClick={this.toggle} id="opened" />
@@ -86,3 +96,5 @@ export default class NavBar extends React.Component<{}, INavBarState> {
     );
   }
 }
+
+export default withRouter(NavBar as any);

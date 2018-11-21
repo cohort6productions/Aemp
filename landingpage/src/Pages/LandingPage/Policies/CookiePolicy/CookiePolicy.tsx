@@ -1,6 +1,7 @@
 // Importing modules
 import * as React from "react";
 // Importing styling and static assets
+import "./CookiePolicy.scss";
 // Importing reduc and friends
 // Importing react routering
 
@@ -17,7 +18,7 @@ export default class CookiePolicy extends React.Component {
     return (
       <div className="landingPage">
         <HeroSection />
-        Cookie
+       
         <CookieConsent />
         <FooterSection />
         <Footer />
