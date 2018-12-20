@@ -1,5 +1,5 @@
 import * as React from "react";
-import "./FooterSection.scss";
+import "./Subscribe.scss";
 
 import {
   Button,
@@ -11,7 +11,7 @@ import {
 } from "reactstrap";
 // Importing interfaces
 
-export default class FooterSection extends React.Component {
+export default class Subscribe extends React.Component {
   public render() {
     return (
       <Row id="footerTop">

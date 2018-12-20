@@ -5,9 +5,9 @@ import * as React from "react";
 // Importing react routering
 
 // Importing UI elements
-import Footer from "src/Components/FooterNew/FooterNew";
-import FooterSection from "src/Components/FooterSection/FooterSection";
+import Footer from "src/Components/Footer/Footer";
 import HeroSection from "src/Components/HeroSection/HeroSection";
+import Subscribe from "src/Components/Subscribe/Subscribe";
 
 // Importing interfaces
 
@@ -17,7 +17,7 @@ export default class PrivacyPolicy extends React.Component {
       <div className="landingPage">
         <HeroSection />
         Private
-        <FooterSection />
+        <Subscribe />
         <Footer />
       </div>
     );

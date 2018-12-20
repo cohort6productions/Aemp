@@ -1,7 +1,17 @@
+import * as History from "history";
 import * as React from "react";
 import "./Footer.scss";
 
-import { Button, Col, Input, Row } from "reactstrap";
+import { withRouter } from "react-router";
+
+import {
+  Button,
+  Col,
+  Input,
+  InputGroup,
+  InputGroupAddon,
+  Row
+} from "reactstrap";
 
 import Facebook from "./Images/facebook.svg";
 import Instagram from "./Images/instagram.svg";
@@ -9,76 +19,122 @@ import Linkedin from "./Images/linkedin.svg";
 import Logo from "./Images/logo-hwz-org@0.5x.png";
 import Twitter from "./Images/twitter.svg";
 
-// Importing interfaces
+import Jumbotron from "reactstrap/lib/Jumbotron";
 
-export default class Footer extends React.Component {
+// Importing interfaces
+interface IFooterProps {
+  history: History.History;
+}
+
+class Footer extends React.Component<IFooterProps> {
+  constructor(props: IFooterProps) {
+    super(props);
+  }
+
+  public toPrivacy = () => {
+    this.props.history.push("/policy/privacy_policy");
+  };
+  public toTerms = () => {
+    this.props.history.push("/policy/terms_and_conditions");
+  };
+  public toCookie = () => {
+    this.props.history.push("/policy/cookie_policy");
+  };
+  public toProjects = () => {
+    this.props.history.push("/policy/privacy_policy");
+  };
+  public toCreators = () => {
+    this.props.history.push("/policy/privacy_policy");
+  };
+
   public render() {
     return (
-      <div id="footer">
-        <Row>
-          <Col xs="12" sm="12" md="6" lg="3" className="footerColumn">
-            <a href="#">
-              <img src={Logo} id="footerLogo" />
+      <Jumbotron className="bg-transparent" id="footerJumbo">
+        <div id="siteMapGrid">
+          <img className="siteMapHeader" src={Logo} alt="" id="logo" />
+          <h4 className="siteMapHeader" id="search">
+            Search
+          </h4>
+          <h4 className="siteMapHeader" id="policies">
+            Policies
+          </h4>
+          <h4 className="siteMapHeader" id="sub">
+            Subscribe and Follow
+          </h4>
+          <div className="colFlexStart botMg5vh" id="logoCont">
+            <a href="mailto:info@ambrasia.com">
+              <span className="text-liteBlue">info@ambrasia.com</span>
             </a>
-            <br />
-            <a href="mailto:info@ambrasia.com">info@ambrasia.com</a>
-            <br />
-            <Row id="socialIcon">
-              <Col>
-                <img src={Facebook} className="icons" />
-              </Col>
-              <Col>
-                <img src={Twitter} className="icons" />
-              </Col>
-              <Col>
-                <img src={Linkedin} className="icons" />
-              </Col>
-              <Col>
-                <img src={Instagram} className="icons" />
-              </Col>
-            </Row>
-          </Col>
-          <Col xs="12" sm="12" md="6" lg="3" className="footerColumn">
-            <a href="#" className="title">
-              Policies
+          </div>
+          <div className="colFlexStart botMg5vh" id="searchCont">
+            <a className="footerLink" onClick={this.toCreators}>
+              <span className="text-liteBlue">Creators</span>
             </a>
-            <br />
-            <a href="#">Privacy Policy</a>
-            <br />
-            <a href="#">Terms and Conditions</a>
-            <br />
-            <a href="#">Cookie Policy</a>
-          </Col>
-          <Col xs="12" sm="12" md="6" lg="3" className="footerColumn">
-            <a href="#" className="title">
-              Search
+            <a className="footerLink" onClick={this.toProjects}>
+              <span className="text-liteBlue">Projects</span>
             </a>
-            <br />
-            <a href="#">Creators</a>
-            <br />
-            <a href="#">Projects</a>
-          </Col>
-
-          <Col xs="12" sm="12" md="6" lg="3" className="footerColumn">
-            <p className="title">Subscribe</p>
-            <div id="footerSubscribe">
-              <Input id="inputBox" type="email" />
-              <Button color="secondary" id="buttonArrow">
-                >
-              </Button>
+          </div>
+          <div className="colFlexStart botMg5vh" id="policiesCont">
+            <a className="footerLink" onClick={this.toPrivacy}>
+              <span className="text-liteBlue">Privacy Policy</span>
+            </a>
+            <a className="footerLink" onClick={this.toTerms}>
+              <span className="text-liteBlue">Terms and Conditions</span>
+            </a>
+            <a className="footerLink" onClick={this.toCookie}>
+              <span className="text-liteBlue">Cookie Policy</span>
+            </a>
+          </div>
+          <div className="colFlexStart" id="followUsCont">
+            <div className="rowFlexSpcBtw halfWidth" id="footerSocial">
+              <a href="#" className="social">
+                <img src={Facebook} alt="Aemp Facebook" className="icons" />
+              </a>
+              <a href="#" className="social">
+                <img src={Twitter} alt="Aemp Twitter" className="icons" />
+              </a>
+              <a href="#" className="social">
+                <img src={Linkedin} alt="Aemp LinkedIn" className="icons" />
+              </a>
+              <a href="#" className="social">
+                <img src={Instagram} alt="Aemp Instagram" className="icons" />
+              </a>
             </div>
-          </Col>
-        </Row>
+
+            <InputGroup>
+              <Input placeholder="Be the first to know" />
+              <InputGroupAddon addonType="append">
+                <Button color="secondary" className="button" id="buttonArrow">
+                  Subscribe
+                </Button>
+              </InputGroupAddon>
+            </InputGroup>
+          </div>
+          <div className="subCont" />
+        </div>
+
         <div id="divisionLine" />
         <Row id="disclaimer">
           <Col sm="12" md="6" id="leftDisclaimer">
-            <p>Made with &#10084; by Cohort 6 Productions</p>
+            <p className="text-liteBlue">
+              Made with &#10084; by{" "}
+              <a
+                className="text-liteBlue"
+                href="https://www.cohort6productions.com"
+              >
+                Cohort 6 Productions
+              </a>
+            </p>
           </Col>
           <Col sm="12" md="6" id="rightDisclaimer">
-            <p>@2018 Ambrasia Multimedia Limited All rights reserved</p>
+            <p className="text-liteBlue">
+              @2018 Ambrasia Multimedia Limited All rights reserved
+            </p>
           </Col>
         </Row>
-      </div>
+      </Jumbotron>
     );
   }
 }
+
+export default withRouter(Footer as any);

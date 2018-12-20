@@ -1,41 +1,78 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 408.788 408.788" style="enable-background:new 0 0 408.788 408.788;" xml:space="preserve">
-<path style="fill:#475993;" d="M353.701,0H55.087C24.665,0,0.002,24.662,0.002,55.085v298.616c0,30.423,24.662,55.085,55.085,55.085
-	h147.275l0.251-146.078h-37.951c-4.932,0-8.935-3.988-8.954-8.92l-0.182-47.087c-0.019-4.959,3.996-8.989,8.955-8.989h37.882
-	v-45.498c0-52.8,32.247-81.55,79.348-81.55h38.65c4.945,0,8.955,4.009,8.955,8.955v39.704c0,4.944-4.007,8.952-8.95,8.955
-	l-23.719,0.011c-25.615,0-30.575,12.172-30.575,30.035v39.389h56.285c5.363,0,9.524,4.683,8.892,10.009l-5.581,47.087
-	c-0.534,4.506-4.355,7.901-8.892,7.901h-50.453l-0.251,146.078h87.631c30.422,0,55.084-24.662,55.084-55.084V55.085
-	C408.786,24.662,384.124,0,353.701,0z"/>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-</svg>
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 100 100"
+   xml:space="preserve"
+   sodipodi:docname="facebook.svg"
+   width="100"
+   height="100"
+   inkscape:version="0.92.1 r15371"><metadata
+     id="metadata39"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs37" /><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     id="namedview35"
+     showgrid="false"
+     inkscape:zoom="3.7442323"
+     inkscape:cx="62.001601"
+     inkscape:cy="102.07447"
+     inkscape:window-x="1072"
+     inkscape:window-y="162"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1" /><path
+     style="fill:#475993;stroke-width:1"
+     d="M 86.526455,-7.265e-4 H 13.477299 C 6.0352447,-7.265e-4 0.002,6.0322736 0.002,13.474572 v 73.049646 c 0,7.442297 6.0330001,13.475292 13.475299,13.475292 h 36.027496 l 0.0614,-35.734671 h -9.283853 c -1.206502,0 -2.185745,-0.975574 -2.190393,-2.182076 l -0.04452,-11.518768 c -0.0047,-1.213107 0.977531,-2.198955 2.190638,-2.198955 h 9.266974 V 37.234984 c 0,-12.916325 7.888499,-19.949362 19.410692,-19.949362 h 9.454848 c 1.209682,0 2.190638,0.98071 2.190638,2.190637 v 9.712686 c 0,1.209438 -0.980221,2.189904 -2.189415,2.190638 l -5.802317,0.0027 c -6.266129,0 -7.479481,2.977605 -7.479481,7.347383 v 9.635627 H 78.85886 c 1.311936,0 2.32983,1.14559 2.175226,2.448476 l -1.365265,11.518768 c -0.130631,1.102291 -1.065352,1.932801 -2.175227,1.932801 H 65.151405 l -0.0614,35.734682 h 21.43694 c 7.442055,0 13.475055,-6.033006 13.475055,-13.47506 V 13.474572 C 100.00175,6.0322736 93.968754,-7.265e-4 86.526455,-7.265e-4 Z"
+     id="path2"
+     inkscape:connector-curvature="0" /><g
+     id="g4"
+     transform="translate(0,-308.78799)" /><g
+     id="g6"
+     transform="translate(0,-308.78799)" /><g
+     id="g8"
+     transform="translate(0,-308.78799)" /><g
+     id="g10"
+     transform="translate(0,-308.78799)" /><g
+     id="g12"
+     transform="translate(0,-308.78799)" /><g
+     id="g14"
+     transform="translate(0,-308.78799)" /><g
+     id="g16"
+     transform="translate(0,-308.78799)" /><g
+     id="g18"
+     transform="translate(0,-308.78799)" /><g
+     id="g20"
+     transform="translate(0,-308.78799)" /><g
+     id="g22"
+     transform="translate(0,-308.78799)" /><g
+     id="g24"
+     transform="translate(0,-308.78799)" /><g
+     id="g26"
+     transform="translate(0,-308.78799)" /><g
+     id="g28"
+     transform="translate(0,-308.78799)" /><g
+     id="g30"
+     transform="translate(0,-308.78799)" /><g
+     id="g32"
+     transform="translate(0,-308.78799)" /></svg>

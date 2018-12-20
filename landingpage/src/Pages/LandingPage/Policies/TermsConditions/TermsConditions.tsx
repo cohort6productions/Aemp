@@ -6,9 +6,9 @@ import "./TermsConditions.scss";
 // Importing react routering
 
 // Importing UI elements
-import Footer from "src/Components/FooterNew/FooterNew";
-import FooterSection from "src/Components/FooterSection/FooterSection";
+import Footer from "src/Components/Footer/Footer";
 import HeroSection from "src/Components/HeroSection/HeroSection";
+import Subscribe from "src/Components/Subscribe/Subscribe";
 
 // Importing interfaces
 
@@ -422,7 +422,7 @@ export default class TermsConditions extends React.Component {
             <a target="_#" href="mailto:steve@ambrasia.com">steve@ambrasia.com</a> .
           </p>
         </div>
-        <FooterSection />
+        <Subscribe />
         <Footer />
       </div>
     );

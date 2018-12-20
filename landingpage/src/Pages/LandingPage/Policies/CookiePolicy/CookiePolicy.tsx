@@ -7,9 +7,9 @@ import "./CookiePolicy.scss";
 
 // Importing UI elements
 import CookieConsent from "src/Components/CookieConsent/CookieConsent";
-import Footer from "src/Components/FooterNew/FooterNew";
-import FooterSection from "src/Components/FooterSection/FooterSection";
+import Footer from "src/Components/Footer/Footer";
 import HeroSection from "src/Components/HeroSection/HeroSection";
+import Subscribe from "src/Components/Subscribe/Subscribe";
 
 // Importing interfaces
 
@@ -20,7 +20,7 @@ export default class CookiePolicy extends React.Component {
         <HeroSection />
        
         <CookieConsent />
-        <FooterSection />
+        <Subscribe />
         <Footer />
       </div>
     );
