@@ -33,6 +33,7 @@ $projectTagHeaderHeight: 7vmin;
 
     .tagContainer {
         border-radius: 5px 5px 0 0;
+        // padding: 0 10%;
         width: 100%;
         background-color: rgba(0, 78, 114, 0.8);
         display: flex;
@@ -60,7 +61,7 @@ $projectTagHeaderHeight: 7vmin;
         }
 
         .hwDivider {
-            height: 6vh;
+            height: 3vh;
             border: 2px solid rgba(241, 241, 241, 0.3);
             border-radius: 2px;
         }
@@ -104,23 +105,23 @@ $projectTagHeaderHeight: 7vmin;
                 margin-bottom: 0;
 
                 @include for-size(phone-only) {
-                    font-size: 90%;
+                    font-size: 130%;
                 }
 
                 @include for-size(tablet-portrait-up) {
-                    font-size: 90%;
+                    font-size: 130%;
                 }
 
                 @include for-size(tablet-landscape-up) {
-                    font-size: 110%;
+                    font-size: 130%;
                 }
 
                 @include for-size(desktop-up) {
-                    font-size: 130%;
+                    font-size: 150%;
                 }
 
                 @include for-size(big-desktop-up) {
-                    font-size: 130%;
+                    font-size: 150%;
                 }
             }
 

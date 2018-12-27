@@ -40,7 +40,7 @@ export default class HowToCarousel extends React.Component {
             heading={"Creator"}
             subHeading={"Producers, Writers and Talents"}
             content={
-              "List your media project or yourself as cast or crew. Start financing for your media project now! Or offer your talents as a potential cast member or crew."
+              "List your media project or yourself as a Creator (producer, writer, cast, or crew). Start financing for your media project now! Or offer your talents as a potential cast member or crew on AEMP funded projects."
             }
             picture={Creator}
           />
@@ -50,17 +50,19 @@ export default class HowToCarousel extends React.Component {
             heading={"Backers"}
             subHeading={"Producers, Individuals, Institutions, Funds"}
             content={
-              "Follow and gain monitoring right as a token holder, giving the same transparency to progress as a co-producer and voting member with updates on milestones."
+              "Invest and monitor as a stakeholder, given the same transparency as a co-producer on milestones and certain voting rights."
             }
             picture={Backer}
           />
         </div>
         <div>
           <HowToCard
-            heading={"Monetization"}
-            subHeading={"Media Acquisition, Streaming, Licensing"}
+            heading={"Profit Participation"}
+            subHeading={
+              "AEMP automatically distributes cash from Streaming, Licensing, Ticket Sales, and Content Acquisition"
+            }
             content={
-              "Earn or Contribute to AEMP utility token. Each media or talent listing earns you a token;or sign up to contribute to the AEMP token. Monitor and trade media asset tokens via blockchain for profit sharing or trading AEMP on an exchange."
+              "Earn or Contribute to AEMP tokens. Each verified media or talent listing earns you a token.  Or register to contribute to AEMP tokens so you can access media projects on the AEMP exchange. Each successfully funded media project will have its own token listed on the AEMP exchange to monitor, trade, or collect distributions in your own wallet."
             }
             picture={Platform}
           />
@@ -70,7 +72,7 @@ export default class HowToCarousel extends React.Component {
             heading={"AEMP"}
             subHeading={"Fee and Equity"}
             content={
-              "AEMP gives utility token holders of AEMP token to contribute or participate in fractional ownership and co-producer rights to monitor, vote, and monetize each media asset."
+              "AEMP gives token holders a way contribute and participate in fractional stakes along with co-producer rights to monitor, vote, and profit from media assets."
             }
             picture={Launch}
           />

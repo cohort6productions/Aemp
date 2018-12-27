@@ -29,7 +29,7 @@ export default class Subscribe extends React.Component {
             <Input placeholder="Come join our team" />
             <InputGroupAddon addonType="append">
               <Button color="warning" className="button" id="button">
-                Join Us
+                Fund your project
               </Button>
             </InputGroupAddon>
           </InputGroup>

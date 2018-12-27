@@ -18,8 +18,7 @@ import SectionHeader from "src/Components/SectionHeader/SectionHeader";
 // Declaring variables
 const headerContent = {
   header: "Partners",
-  subHeader: `Some of the most powerful media partners also share the same vision as we do
-    We believe we can help bring media projects to live with a little of your help`
+  subHeader: `We collaborate with powerful media partners and talented individuals alike.  Our mission is to build an engaged, dynamic, and transparent ecosystem to produce multimedia content`
 };
 
 export default class PartnersCard extends React.Component {

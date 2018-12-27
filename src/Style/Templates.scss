@@ -49,8 +49,16 @@ $blue: rgba(25, 118, 210, 1);
   color: rgb(98, 132, 204);
 }
 
-.nullMargin{
+.nullMargin {
   margin: 0;
+}
+
+.typeface-anchor {
+  font-family: 'Droid Serif Bold', "Merriweather", 'Times New Roman', Times, serif;
+}
+
+.typeface-body {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
 @mixin boxShadow {

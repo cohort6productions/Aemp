@@ -18,11 +18,11 @@ export default class HeroSection extends React.Component {
       <header className="fullPage" id="hero">
         <Navbar />
         <div className="heroContent">
-          <h2 className="text-white">
-            Support Your Beloved <br /> Creative Media Projects
+          <h2 className="typeface-body text-white">
+            Back creative media projects <br /> via Blockchain
           </h2>
           <p className="text-white">
-            Invest into what you believe in. Don't be an outsider.
+            Invest transparently alongside creators (Producers & Talents)
           </p>
           <div className="subscribeSection">
             <div className="emailInput">

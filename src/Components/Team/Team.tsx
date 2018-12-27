@@ -13,7 +13,7 @@ import TeamMember from "./TeamMember/TeamMember";
 // Declaring variables
 const headerContent = {
   header: "Our Team",
-  subHeader: `Meet our amazing team members who made all this possible`
+  subHeader: `Meet our core team`
 };
 
 const tempTeamInfo: ITeamProps[] = [
@@ -39,7 +39,7 @@ const tempTeamInfo: ITeamProps[] = [
     facebookLink: "123",
     instagramLink: "123",
     linkedinLink: "123",
-    name: "Jason Coyle",
+    name: "Dave Chang",
     pictureLink: jason,
     title: "COO",
     twitterLink: "123"
