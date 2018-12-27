@@ -7,13 +7,17 @@ import {
   Input,
   InputGroup,
   InputGroupAddon,
+  // Jumbotron,
   Row
 } from "reactstrap";
+// import Container from "reactstrap/lib/Container";
 // Importing interfaces
 
 export default class Subscribe extends React.Component {
   public render() {
     return (
+      // <Jumbotron fluid={true}>
+      // <Container fluid={true}>
       <Row id="footerTop">
         <Col xs="12" sm="12" md="12" lg="6">
           <h2 className="text-white" id="subscribeHeader">
@@ -35,6 +39,8 @@ export default class Subscribe extends React.Component {
           </InputGroup>
         </Col>
       </Row>
+      // </Container>
+      // </Jumbotron>
     );
   }
 }

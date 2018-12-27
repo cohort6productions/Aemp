@@ -56,4 +56,5 @@ export interface ICreatorProjectDisplayProps {
 
 export interface ICreatorProjectDisplayState {
   currentDataSet: ICreatorProjectSet[];
+  isProjectList: boolean;
 }

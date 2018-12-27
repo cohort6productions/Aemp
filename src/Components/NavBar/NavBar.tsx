@@ -16,7 +16,8 @@ import {
 import { INavBarState } from "../../Interfaces/Interfaces";
 import "./NavBar.scss";
 
-import Logo from "./Images/logo-hwz-org.png";
+// import Logo from "./Images/logo-hwz-org.png";
+import Logo from "./Images/logo-transbg.png";
 
 // Importing interfaces
 interface IHeaderProps {
@@ -54,27 +55,27 @@ class NavBar extends React.Component<IHeaderProps, INavBarState> {
             <Nav className="navbar" navbar={true}>
               <NavItem>
                 <NavLink href="/components/" className="navLinks text-white">
-                  SEARCH
+                  <span className="text-white">SEARCH</span>
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="/components/" className="navLinks text-white">
-                  HOW IT WORKS
+                  <span className="text-white">HOW IT WORKS</span>
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="/components/" className="navLinks text-white">
-                  PARTNERS
+                  <span className="text-white">PARTNERS</span>
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="/components/" className="navLinks text-white">
-                  CONTACT US
+                  <span className="text-white">CONTACT US</span>
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="/components/" className="navLinks text-white">
-                  LANGUAGE
+                  <span className="text-white">LANGUAGE</span>
                 </NavLink>
               </NavItem>
               <NavItem>
@@ -83,7 +84,7 @@ class NavBar extends React.Component<IHeaderProps, INavBarState> {
                   className="navLinks text-white"
                   id="collapseMenu"
                 >
-                  LOGIN/REGISTER
+                  <span>LOGIN/REGISTER</span>
                 </NavLink>
               </NavItem>
             </Nav>

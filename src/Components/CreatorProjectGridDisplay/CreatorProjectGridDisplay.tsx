@@ -24,6 +24,7 @@ import rockman1 from "./Images/Projects/rockman1.jpg";
 // Importing react routering
 
 // Importing UI elements
+import { Button } from "reactstrap";
 import ICreatorProjectBox from "./CreatorProjectBox/CreatorProjectBox";
 
 // Importing interfaces
@@ -121,19 +122,22 @@ export default class CreatorProjectGridDisplay extends React.Component<
     super(props);
 
     this.state = {
-      currentDataSet: projectsList
+      currentDataSet: projectsList,
+      isProjectList: true
     };
   }
 
   public setCreatorsList = () => {
     this.setState({
-      currentDataSet: creatorsList
+      currentDataSet: creatorsList,
+      isProjectList: false
     });
   };
 
   public setProjectsList = () => {
     this.setState({
-      currentDataSet: projectsList
+      currentDataSet: projectsList,
+      isProjectList: true
     });
   };
 
@@ -143,12 +147,23 @@ export default class CreatorProjectGridDisplay extends React.Component<
         <div className="tagContainer">
           <a className="singleTag" onClick={this.setProjectsList}>
             {/* <img src={videoButton} alt="" className="tagIcon" /> */}
-            <h4 className="tagText text-white">Projects</h4>
+            <Button
+              className={this.state.isProjectList ? "button active" : "button"}
+              color="warning"
+              // disabled={this.state.isProjectList ? false : true}
+            >
+              <h4 className="tagText text-white">Projects</h4>
+            </Button>
           </a>
           <div className="hwDivider" />
           <a className="singleTag" onClick={this.setCreatorsList}>
             {/* <img src={playButton} alt="" className="tagIcon" /> */}
-            <h4 className="tagText text-white">Creators </h4>
+            <Button
+              className={this.state.isProjectList ? "button" : "button active"}
+              color="warning"
+            >
+              <h4 className="tagText text-white">Creators </h4>
+            </Button>
           </a>
         </div>
         <div className="creatorProjectContainer">

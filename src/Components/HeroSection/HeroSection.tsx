@@ -7,8 +7,8 @@ import "./HeroSection.scss";
 // Importing reduc and friends
 // Importing react routering
 // Importing UI elements
-import { Button } from "reactstrap";
-import InputBox from "src/Components/InputBox/InputBox";
+import { Button, Input, InputGroup, InputGroupAddon } from "reactstrap";
+// import InputBox from "src/Components/InputBox/InputBox";
 import Navbar from "src/Components/NavBar/NavBar";
 // Importing interfaces
 
@@ -22,16 +22,24 @@ export default class HeroSection extends React.Component {
             Back creative media projects <br /> via Blockchain
           </h2>
           <p className="text-white">
-            Invest transparently alongside creators (Producers & Talents)
+            Invest transparently alongside creators, producers & talents
           </p>
-          <div className="subscribeSection">
+          {/* <div className="subscribeSection">
             <div className="emailInput">
               <InputBox message="Subscribe for updates" />
             </div>
             <Button className="button" color="warning">
               Subscribe
             </Button>
-          </div>
+          </div> */}
+          <InputGroup id="subInputBox">
+            <Input placeholder="Come join our team" />
+            <InputGroupAddon addonType="append">
+              <Button color="warning" className="button">
+                Fund your project
+              </Button>
+            </InputGroupAddon>
+          </InputGroup>
         </div>
       </header>
     );
