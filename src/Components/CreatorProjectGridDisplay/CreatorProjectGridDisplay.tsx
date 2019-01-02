@@ -110,7 +110,7 @@ const projectsList: ICreatorProjectSet[] = [
     description: "TBA",
     highlight: false,
     image: rockman1,
-    name: "Rockman Retro"
+    name: "Rockman"
   }
 ];
 
@@ -141,29 +141,34 @@ export default class CreatorProjectGridDisplay extends React.Component<
     });
   };
 
+  public projectTab = (status: boolean, text: string) => (
+    <Button className={"button " + (status && "active")} color="warning">
+      <h4 className="tagText text-white">{text}</h4>
+    </Button>
+  );
+
+  public creatorTab = (status: boolean, text: string) => (
+    <Button className={"button " + (!status && "active")} color="warning">
+      <h4 className="tagText text-white">{text}</h4>
+    </Button>
+  );
+
   public render() {
     return (
       <div className="projectSection">
         <div className="tagContainer">
           <a className="singleTag" onClick={this.setProjectsList}>
-            {/* <img src={videoButton} alt="" className="tagIcon" /> */}
-            <Button
+            {/* <Button
               className={this.state.isProjectList ? "button active" : "button"}
               color="warning"
-              // disabled={this.state.isProjectList ? false : true}
             >
               <h4 className="tagText text-white">Projects</h4>
-            </Button>
+            </Button> */}
+            {this.projectTab(this.state.isProjectList, "Projects")}
           </a>
           <div className="hwDivider" />
           <a className="singleTag" onClick={this.setCreatorsList}>
-            {/* <img src={playButton} alt="" className="tagIcon" /> */}
-            <Button
-              className={this.state.isProjectList ? "button" : "button active"}
-              color="warning"
-            >
-              <h4 className="tagText text-white">Creators </h4>
-            </Button>
+            {this.creatorTab(this.state.isProjectList, "Creators")}
           </a>
         </div>
         <div className="creatorProjectContainer">

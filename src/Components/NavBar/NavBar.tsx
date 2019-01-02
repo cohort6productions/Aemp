@@ -50,48 +50,37 @@ class NavBar extends React.Component<IHeaderProps, INavBarState> {
           <img className="navLogo" src={Logo} alt="Aemp Logo" />
         </NavbarBrand>
         <NavbarToggler onClick={this.toggle} id="opened" />
-        <Collapse isOpen={this.state.isOpen} navbar={true}>
-          <div id="linksAndButton">
-            <Nav className="navbar" navbar={true}>
-              <NavItem>
-                <NavLink href="/components/" className="navLinks text-white">
-                  <span className="text-white">SEARCH</span>
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/components/" className="navLinks text-white">
-                  <span className="text-white">HOW IT WORKS</span>
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/components/" className="navLinks text-white">
-                  <span className="text-white">PARTNERS</span>
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/components/" className="navLinks text-white">
-                  <span className="text-white">CONTACT US</span>
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/components/" className="navLinks text-white">
-                  <span className="text-white">LANGUAGE</span>
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  href="/components/"
-                  className="navLinks text-white"
-                  id="collapseMenu"
-                >
-                  <span>LOGIN/REGISTER</span>
-                </NavLink>
-              </NavItem>
-            </Nav>
-            <Button className="button" id="buttonLogin" color={"warning"}>
-              Login/Register
-            </Button>
-          </div>
+        <Collapse className="" isOpen={this.state.isOpen} navbar={true}>
+          {/* <div id="linksAndButton"> */}
+          <Nav className="navbar-nav mr-auto" navbar={true}>
+            <NavItem>
+              <NavLink href="/components/" className="navLinks text-white">
+                <span className="text-white ">Search</span>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/components/" className="navLinks text-white">
+                <span className="text-white ">How It Works</span>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/components/" className="navLinks text-white">
+                <span className="text-white ">Partners</span>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/components/" className="navLinks text-white">
+                <span className="text-white ">Contact Us</span>
+              </NavLink>
+            </NavItem>
+          </Nav>
+          <Button
+            className="button"
+            // id="buttonLogin"
+            color={"light"}
+          >
+            <span className="text-orange">Login/ Register</span>
+          </Button>
         </Collapse>
       </Navbar>
     );
