@@ -47,17 +47,17 @@ class NavBar extends React.Component<IHeaderProps, INavBarState> {
     return (
       <Navbar className="navCenter" light={true} expand="lg">
         <NavbarBrand onClick={this.toHome}>
-          <img className="navLogo" src={Logo} alt="Aemp Logo" />
+          <img className="navLogo" src={Logo} alt="Aemp Logo" id="navLg" />
         </NavbarBrand>
         <NavbarToggler onClick={this.toggle} id="opened" />
         <Collapse className="" isOpen={this.state.isOpen} navbar={true}>
           {/* <div id="linksAndButton"> */}
           <Nav className="navbar-nav mr-auto" navbar={true}>
-            <NavItem>
+            {/* <NavItem>
               <NavLink href="/components/" className="navLinks text-white">
                 <span className="text-white ">Search</span>
               </NavLink>
-            </NavItem>
+            </NavItem> */}
             <NavItem>
               <NavLink href="/components/" className="navLinks text-white">
                 <span className="text-white ">How It Works</span>
@@ -79,7 +79,7 @@ class NavBar extends React.Component<IHeaderProps, INavBarState> {
             // id="buttonLogin"
             color={"light"}
           >
-            <span className="text-orange">Login/ Register</span>
+            <span className="text-orange">Login / Register</span>
           </Button>
         </Collapse>
       </Navbar>

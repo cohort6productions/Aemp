@@ -16,7 +16,7 @@ import {
 import Facebook from "./Images/facebook.svg";
 import Instagram from "./Images/instagram.svg";
 import Linkedin from "./Images/linkedin.svg";
-import Logo from "./Images/logo-hwz-org@0.5x.png";
+import Logo from "./Images/logo-transbg.png";
 import Twitter from "./Images/twitter.svg";
 
 import Jumbotron from "reactstrap/lib/Jumbotron";

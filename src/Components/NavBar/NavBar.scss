@@ -8,6 +8,8 @@
   justify-items: center;
 
   .navLogo {
+    position: relative;
+
     @include for-size(phone-only) {
       width: 110px;
     }
@@ -18,15 +20,24 @@
 
     @include for-size(tablet-landscape-up) {
       width: 130px;
+      top: -4px;
     }
 
     @include for-size(desktop-up) {
       width: 140px;
+      top: -5px;
     }
 
     @include for-size(big-desktop-up) {
       width: 150px;
+      top: -6px;
     }
+  }
+
+
+  .navLinks {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
   }
 
   // .navLinks {
