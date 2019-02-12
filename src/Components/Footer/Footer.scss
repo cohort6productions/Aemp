@@ -43,6 +43,9 @@
 
     #logo {
       grid-area: lg;
+      max-width: 150px;
+      position: relative;
+      top: -10px;
     }
 
     #search {
@@ -87,7 +90,7 @@
   #divisionLine {
     display: block;
     border-top: 1px solid rgb(226, 240, 252);
-    margin: 15vh 0 5vh 0;
+    margin: 5vh 0 5vh 0;
 
   }
 

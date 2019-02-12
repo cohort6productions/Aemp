@@ -29,156 +29,161 @@ import ICreatorProjectBox from "./CreatorProjectBox/CreatorProjectBox";
 
 // Importing interfaces
 import {
-  ICreatorProjectDisplayState,
-  ICreatorProjectSet
+    ICreatorProjectDisplayState,
+    ICreatorProjectSet
 } from "src/Interfaces/Interfaces";
 
 const creatorsList: ICreatorProjectSet[] = [
-  {
-    description: "TBA",
-    highlight: false,
-    image: Soyoung,
-    name: "Soyoung Kim"
-  },
-  {
-    description: "TBA",
-    highlight: false,
-    image: Eunkyung,
-    name: "Eunkyung Shin"
-  },
-  {
-    description:
-      "She is as beautiful as the light of dawn, dazzling the eye of the commons.",
-    highlight: false,
-    image: Jihye,
-    name: "Jihye Choi"
-  },
-  {
-    description: "Bohye Kim is the best of the best. Her charms are endless.",
-    highlight: false,
-    image: Bohye,
-    name: "Bohye Kim"
-  },
-  {
-    description: "TBA",
-    highlight: false,
-    image: Cowsep,
-    name: "Cowsep"
-  },
-  {
-    description: "TBA",
-    highlight: false,
-    image: Evos,
-    name: "EVOS Gaming"
-  }
+    {
+        description: "TBA",
+        highlight: false,
+        image: Soyoung,
+        name: "Soyoung Kim"
+    },
+    {
+        description: "TBA",
+        highlight: false,
+        image: Eunkyung,
+        name: "Eunkyung Shin"
+    },
+    {
+        description:
+            "She is as beautiful as the light of dawn, dazzling the eye of the commons.",
+        highlight: false,
+        image: Jihye,
+        name: "Jihye Choi"
+    },
+    {
+        description:
+            "Bohye Kim is the best of the best. Her charms are endless.",
+        highlight: false,
+        image: Bohye,
+        name: "Bohye Kim"
+    },
+    {
+        description: "TBA",
+        highlight: false,
+        image: Cowsep,
+        name: "Cowsep"
+    },
+    {
+        description: "TBA",
+        highlight: false,
+        image: Evos,
+        name: "EVOS Gaming"
+    }
 ];
 
 const projectsList: ICreatorProjectSet[] = [
-  {
-    description: "Good show",
-    highlight: false,
-    image: fb,
-    name: "Fantastic Beast"
-  },
-  {
-    description: "TBA",
-    highlight: false,
-    image: iuconcert,
-    name: "IU concert"
-  },
-  {
-    description:
-      "The legends fight for honor and fame. The legends fight for honor and fame. The legends fight for honor and fame.",
-    highlight: false,
-    image: league,
-    name: "League Worlds Championship"
-  },
-  {
-    description:
-      "The future of civilization rests in the fate of the One Ring. The future of civilization rests in the fate of the One Ring. ",
-    highlight: false,
-    image: lotr,
-    name: "Lord of the rings"
-  },
-  {
-    description: "TBA",
-    highlight: false,
-    image: rockman,
-    name: "Super Rock"
-  },
-  {
-    description: "TBA",
-    highlight: false,
-    image: rockman1,
-    name: "Rockman"
-  }
+    {
+        description: "Good show",
+        highlight: false,
+        image: fb,
+        name: "Fantastic Beast"
+    },
+    {
+        description: "TBA",
+        highlight: false,
+        image: iuconcert,
+        name: "IU concert"
+    },
+    {
+        description:
+            "The legends fight for honor and fame. The legends fight for honor and fame. The legends fight for honor and fame.",
+        highlight: false,
+        image: league,
+        name: "League of Legends"
+    },
+    {
+        description:
+            "The future of civilization rests in the fate of the One Ring. The future of civilization rests in the fate of the One Ring. ",
+        highlight: false,
+        image: lotr,
+        name: "Lord of the rings"
+    },
+    {
+        description: "TBA",
+        highlight: false,
+        image: rockman,
+        name: "Super Rock"
+    },
+    {
+        description: "TBA",
+        highlight: false,
+        image: rockman1,
+        name: "Rockman"
+    }
 ];
 
 export default class CreatorProjectGridDisplay extends React.Component<
-  {},
-  ICreatorProjectDisplayState
+    {},
+    ICreatorProjectDisplayState
 > {
-  constructor(props: { imageOne: boolean }) {
-    super(props);
+    constructor(props: { imageOne: boolean }) {
+        super(props);
 
-    this.state = {
-      currentDataSet: projectsList,
-      isProjectList: true
+        this.state = {
+            currentDataSet: projectsList,
+            isProjectList: true
+        };
+    }
+
+    public setCreatorsList = () => {
+        this.setState({
+            currentDataSet: creatorsList,
+            isProjectList: false
+        });
     };
-  }
 
-  public setCreatorsList = () => {
-    this.setState({
-      currentDataSet: creatorsList,
-      isProjectList: false
-    });
-  };
+    public setProjectsList = () => {
+        this.setState({
+            currentDataSet: projectsList,
+            isProjectList: true
+        });
+    };
 
-  public setProjectsList = () => {
-    this.setState({
-      currentDataSet: projectsList,
-      isProjectList: true
-    });
-  };
+    public projectTab = (status: boolean, text: string) => (
+        <Button className={"button " + (status && "active")} color="warning">
+            <h4 className="tagText text-white">{text}</h4>
+        </Button>
+    );
 
-  public projectTab = (status: boolean, text: string) => (
-    <Button className={"button " + (status && "active")} color="warning">
-      <h4 className="tagText text-white">{text}</h4>
-    </Button>
-  );
+    public creatorTab = (status: boolean, text: string) => (
+        <Button className={"button " + (!status && "active")} color="warning">
+            <h4 className="tagText text-white">{text}</h4>
+        </Button>
+    );
 
-  public creatorTab = (status: boolean, text: string) => (
-    <Button className={"button " + (!status && "active")} color="warning">
-      <h4 className="tagText text-white">{text}</h4>
-    </Button>
-  );
-
-  public render() {
-    return (
-      <div className="projectSection">
-        <div className="tagContainer">
-          <a className="singleTag" onClick={this.setProjectsList}>
-            {/* <Button
+    public render() {
+        return (
+            <div className="projectSection">
+                <div className="tagContainer">
+                    <a className="singleTag" onClick={this.setProjectsList}>
+                        {/* <Button
               className={this.state.isProjectList ? "button active" : "button"}
               color="warning"
             >
               <h4 className="tagText text-white">Projects</h4>
             </Button> */}
-            {this.projectTab(this.state.isProjectList, "Projects")}
-          </a>
-          <div className="hwDivider" />
-          <a className="singleTag" onClick={this.setCreatorsList}>
-            {this.creatorTab(this.state.isProjectList, "Creators")}
-          </a>
-        </div>
-        <div className="creatorProjectContainer">
-          {this.state.currentDataSet.map((unit, key) => {
-            return (
-              <ICreatorProjectBox dataSet={unit} id={`img${key}`} key={key} />
-            );
-          })}
-        </div>
-      </div>
-    );
-  }
+                        {this.projectTab(this.state.isProjectList, "Projects")}
+                    </a>
+                    <div className="hwDivider" />
+                    <a className="singleTag" onClick={this.setCreatorsList}>
+                        {this.creatorTab(this.state.isProjectList, "Creators")}
+                    </a>
+                </div>
+                <div className="creatorProjectContainer">
+                    {this.state.currentDataSet.map((unit, key) => {
+                        return (
+                            <ICreatorProjectBox
+                                dataSet={unit}
+                                id={`img${key}`}
+                                key={key}
+                            />
+                        );
+                    })}
+                </div>
+            </div>
+        );
+    }
 }
